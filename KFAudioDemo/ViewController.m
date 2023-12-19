@@ -46,8 +46,6 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
     
     self.title = @"Demos";
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    
     // myTableView.
     [self.view addSubview:self.myTableView];
     self.myTableView.translatesAutoresizingMaskIntoConstraints = NO;
