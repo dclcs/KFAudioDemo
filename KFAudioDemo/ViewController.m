@@ -32,8 +32,8 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-    self.demoList = @[@"Audio Capture", @"Audio Encoder"];
-    self.demoPageNameList = @[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController"];
+    self.demoList = @[@"Audio Capture", @"Audio Encoder", @"Audio Muxer"];
+    self.demoPageNameList = @[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController"];
     
     [self setupUI];
 }
@@ -76,7 +76,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.demoList.count;
+    return 1;
 }
 
 - (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
