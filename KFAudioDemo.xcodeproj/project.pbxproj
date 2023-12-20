@@ -13,6 +13,10 @@
 		6F0008912B32A5BF00DC776A /* KFMuxerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008902B32A5BF00DC776A /* KFMuxerConfig.m */; };
 		6F0008982B32A70200DC776A /* KFMP4Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008972B32A70200DC776A /* KFMP4Muxer.m */; };
 		6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */; };
+		6F00089E2B330F8400DC776A /* KFDemuxerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089D2B330F8400DC776A /* KFDemuxerConfig.m */; };
+		6F0008A32B33103B00DC776A /* KFMP4Demuxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008A22B33103B00DC776A /* KFMP4Demuxer.m */; };
+		6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */; };
+		6F0008A82B33125C00DC776A /* input.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6F0008A72B33125C00DC776A /* input.mp4 */; };
 		6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306E52B31C13E008ABA51 /* AppDelegate.m */; };
 		6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306EB2B31C13E008ABA51 /* ViewController.m */; };
 		6FB306F12B31C13F008ABA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB306F02B31C13F008ABA51 /* Assets.xcassets */; };
@@ -37,6 +41,13 @@
 		6F0008972B32A70200DC776A /* KFMP4Muxer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMP4Muxer.m; sourceTree = "<group>"; };
 		6F0008992B32B0CD00DC776A /* KFAudioMuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioMuxerViewController.h; sourceTree = "<group>"; };
 		6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioMuxerViewController.m; sourceTree = "<group>"; };
+		6F00089C2B330F8400DC776A /* KFDemuxerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFDemuxerConfig.h; sourceTree = "<group>"; };
+		6F00089D2B330F8400DC776A /* KFDemuxerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFDemuxerConfig.m; sourceTree = "<group>"; };
+		6F0008A12B33103B00DC776A /* KFMP4Demuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMP4Demuxer.h; sourceTree = "<group>"; };
+		6F0008A22B33103B00DC776A /* KFMP4Demuxer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMP4Demuxer.m; sourceTree = "<group>"; };
+		6F0008A42B3311EE00DC776A /* KFAudioDemuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioDemuxerViewController.h; sourceTree = "<group>"; };
+		6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDemuxerViewController.m; sourceTree = "<group>"; };
+		6F0008A72B33125C00DC776A /* input.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = input.mp4; sourceTree = "<group>"; };
 		6FB306E12B31C13E008ABA51 /* KFAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB306E42B31C13E008ABA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB306E52B31C13E008ABA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +85,8 @@
 				4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */,
 				6F0008992B32B0CD00DC776A /* KFAudioMuxerViewController.h */,
 				6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */,
+				6F0008A42B3311EE00DC776A /* KFAudioDemuxerViewController.h */,
+				6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -81,13 +94,33 @@
 		6F0008952B32A6E500DC776A /* Muxer */ = {
 			isa = PBXGroup;
 			children = (
+				6F0008A02B33100100DC776A /* KFDemux */,
+				6F00089F2B330FED00DC776A /* KFMuxe */,
 				6F0008922B32A5FE00DC776A /* KFMediaBase.h */,
+			);
+			path = Muxer;
+			sourceTree = "<group>";
+		};
+		6F00089F2B330FED00DC776A /* KFMuxe */ = {
+			isa = PBXGroup;
+			children = (
 				6F00088F2B32A5BF00DC776A /* KFMuxerConfig.h */,
 				6F0008902B32A5BF00DC776A /* KFMuxerConfig.m */,
 				6F0008962B32A70200DC776A /* KFMP4Muxer.h */,
 				6F0008972B32A70200DC776A /* KFMP4Muxer.m */,
 			);
-			path = Muxer;
+			path = KFMuxe;
+			sourceTree = "<group>";
+		};
+		6F0008A02B33100100DC776A /* KFDemux */ = {
+			isa = PBXGroup;
+			children = (
+				6F00089C2B330F8400DC776A /* KFDemuxerConfig.h */,
+				6F00089D2B330F8400DC776A /* KFDemuxerConfig.m */,
+				6F0008A12B33103B00DC776A /* KFMP4Demuxer.h */,
+				6F0008A22B33103B00DC776A /* KFMP4Demuxer.m */,
+			);
+			path = KFDemux;
 			sourceTree = "<group>";
 		};
 		6FB306D82B31C13E008ABA51 = {
@@ -109,7 +142,9 @@
 		6FB306E32B31C13E008ABA51 /* KFAudioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6F0008A72B33125C00DC776A /* input.mp4 */,
 				4009D6322B32959F00274DB8 /* ViewControllers */,
+				6F0008952B32A6E500DC776A /* Muxer */,
 				6FB306FD2B31C14D008ABA51 /* Audio */,
 				6FB306E42B31C13E008ABA51 /* AppDelegate.h */,
 				6FB306E52B31C13E008ABA51 /* AppDelegate.m */,
@@ -126,7 +161,6 @@
 		6FB306FD2B31C14D008ABA51 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				6F0008952B32A6E500DC776A /* Muxer */,
 				6FB306FE2B31C17B008ABA51 /* KFAudioConfig.h */,
 				6FB306FF2B31C17B008ABA51 /* KFAudioConfig.m */,
 				6FB307012B31C3BD008ABA51 /* KFAudioCapture.h */,
@@ -198,6 +232,7 @@
 			files = (
 				6FB306F42B31C13F008ABA51 /* LaunchScreen.storyboard in Resources */,
 				6FB306F12B31C13F008ABA51 /* Assets.xcassets in Resources */,
+				6F0008A82B33125C00DC776A /* input.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,11 +250,14 @@
 				6F0008912B32A5BF00DC776A /* KFMuxerConfig.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
 				6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */,
+				6F00089E2B330F8400DC776A /* KFDemuxerConfig.m in Sources */,
 				4009D6312B32881700274DB8 /* KFAudioEncoder.m in Sources */,
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
+				6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */,
 				6F0008982B32A70200DC776A /* KFMP4Muxer.m in Sources */,
 				6FB307032B31C3BD008ABA51 /* KFAudioCapture.m in Sources */,
+				6F0008A32B33103B00DC776A /* KFMP4Demuxer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

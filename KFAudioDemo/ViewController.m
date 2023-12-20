@@ -32,8 +32,8 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-    self.demoList = @[@"Audio Capture", @"Audio Encoder", @"Audio Muxer"];
-    self.demoPageNameList = @[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController"];
+    self.demoList = @[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer"];
+    self.demoPageNameList = @[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController"];
     
     [self setupUI];
 }
