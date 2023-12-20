@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4009D6312B32881700274DB8 /* KFAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6302B32881700274DB8 /* KFAudioEncoder.m */; };
+		4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */; };
+		4009D6382B32961800274DB8 /* KFAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6372B32961800274DB8 /* KFAudioTools.m */; };
 		6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306E52B31C13E008ABA51 /* AppDelegate.m */; };
 		6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306EB2B31C13E008ABA51 /* ViewController.m */; };
 		6FB306F12B31C13F008ABA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB306F02B31C13F008ABA51 /* Assets.xcassets */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4009D62F2B32881700274DB8 /* KFAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioEncoder.h; sourceTree = "<group>"; };
+		4009D6302B32881700274DB8 /* KFAudioEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioEncoder.m; sourceTree = "<group>"; };
+		4009D6332B3295BB00274DB8 /* KFAudioEncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioEncoderViewController.h; sourceTree = "<group>"; };
+		4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioEncoderViewController.m; sourceTree = "<group>"; };
+		4009D6362B32961800274DB8 /* KFAudioTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioTools.h; sourceTree = "<group>"; };
+		4009D6372B32961800274DB8 /* KFAudioTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioTools.m; sourceTree = "<group>"; };
 		6FB306E12B31C13E008ABA51 /* KFAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB306E42B31C13E008ABA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB306E52B31C13E008ABA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4009D6322B32959F00274DB8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6FB307042B31D28D008ABA51 /* KFAudioCaptureViewController.h */,
+				6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */,
+				4009D6332B3295BB00274DB8 /* KFAudioEncoderViewController.h */,
+				4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		6FB306D82B31C13E008ABA51 = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +85,12 @@
 		6FB306E32B31C13E008ABA51 /* KFAudioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4009D6322B32959F00274DB8 /* ViewControllers */,
 				6FB306FD2B31C14D008ABA51 /* Audio */,
 				6FB306E42B31C13E008ABA51 /* AppDelegate.h */,
 				6FB306E52B31C13E008ABA51 /* AppDelegate.m */,
 				6FB306EA2B31C13E008ABA51 /* ViewController.h */,
 				6FB306EB2B31C13E008ABA51 /* ViewController.m */,
-				6FB307042B31D28D008ABA51 /* KFAudioCaptureViewController.h */,
-				6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */,
 				6FB306F02B31C13F008ABA51 /* Assets.xcassets */,
 				6FB306F22B31C13F008ABA51 /* LaunchScreen.storyboard */,
 				6FB306F52B31C13F008ABA51 /* Info.plist */,
@@ -87,6 +106,10 @@
 				6FB306FF2B31C17B008ABA51 /* KFAudioConfig.m */,
 				6FB307012B31C3BD008ABA51 /* KFAudioCapture.h */,
 				6FB307022B31C3BD008ABA51 /* KFAudioCapture.m */,
+				4009D62F2B32881700274DB8 /* KFAudioEncoder.h */,
+				4009D6302B32881700274DB8 /* KFAudioEncoder.m */,
+				4009D6362B32961800274DB8 /* KFAudioTools.h */,
+				4009D6372B32961800274DB8 /* KFAudioTools.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -163,6 +186,9 @@
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
 				6FB307002B31C17B008ABA51 /* KFAudioConfig.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
+				4009D6382B32961800274DB8 /* KFAudioTools.m in Sources */,
+				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
+				4009D6312B32881700274DB8 /* KFAudioEncoder.m in Sources */,
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
 				6FB307032B31C3BD008ABA51 /* KFAudioCapture.m in Sources */,
