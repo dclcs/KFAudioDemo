@@ -7,9 +7,10 @@
 
 #import "KFAudioMuxerViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "KFAudioCapture.h"
-#import "KFAudioEncoder.h"
-#import "KFMP4Muxer.h"
+#import <KFAVKit/KFAudioCapture.h>
+#import <KFAVKit/KFAudioEncoder.h>
+#import <KFAVKit/KFMP4Muxer.h>
+
 
 @interface KFAudioMuxerViewController ()
 @property (nonatomic, strong) KFAudioConfig *audioConfig;

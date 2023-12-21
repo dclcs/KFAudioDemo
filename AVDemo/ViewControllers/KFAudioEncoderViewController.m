@@ -7,9 +7,9 @@
 
 #import "KFAudioEncoderViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "KFAudioCapture.h"
-#import "KFAudioEncoder.h"
-#import "KFAudioTools.h"
+#import <KFAVKit/KFAudioCapture.h>
+#import <KFAVKit/KFAudioEncoder.h>
+#import <KFAVKit/KFAudioTools.h>
 
 @interface KFAudioEncoderViewController ()
 @property (nonatomic, strong) KFAudioConfig *audioConfig;

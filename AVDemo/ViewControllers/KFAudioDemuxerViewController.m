@@ -6,8 +6,9 @@
 //
 
 #import "KFAudioDemuxerViewController.h"
-#import "KFMP4Demuxer.h"
-#import "KFAudioTools.h"
+
+#import <KFAVKit/KFMP4Demuxer.h>
+#import <KFAVKit/KFAudioTools.h>
 
 @interface KFAudioDemuxerViewController ()
 @property (nonatomic, strong) KFDemuxerConfig *demuxerConfig;

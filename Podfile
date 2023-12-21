@@ -4,9 +4,7 @@ platform :ios, '13.0'
 target 'AVDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   pod 'Debugo'
-
-  # Pods for KFAudioDemo
-
+  pod 'KFAVKit', :path => 'LocalPods/KFAVKit'
 end
 
 post_install do |installer|
