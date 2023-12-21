@@ -10,6 +10,8 @@
 		4009D6312B32881700274DB8 /* KFAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6302B32881700274DB8 /* KFAudioEncoder.m */; };
 		4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */; };
 		4009D6382B32961800274DB8 /* KFAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6372B32961800274DB8 /* KFAudioTools.m */; };
+		4009D63B2B342A2C00274DB8 /* KFAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D63A2B342A2C00274DB8 /* KFAudioDecoder.m */; };
+		4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D63D2B34302E00274DB8 /* KFAudioDecoderViewController.m */; };
 		6F0008912B32A5BF00DC776A /* KFMuxerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008902B32A5BF00DC776A /* KFMuxerConfig.m */; };
 		6F0008982B32A70200DC776A /* KFMP4Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008972B32A70200DC776A /* KFMP4Muxer.m */; };
 		6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */; };
@@ -34,6 +36,10 @@
 		4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioEncoderViewController.m; sourceTree = "<group>"; };
 		4009D6362B32961800274DB8 /* KFAudioTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioTools.h; sourceTree = "<group>"; };
 		4009D6372B32961800274DB8 /* KFAudioTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioTools.m; sourceTree = "<group>"; };
+		4009D6392B342A2C00274DB8 /* KFAudioDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioDecoder.h; sourceTree = "<group>"; };
+		4009D63A2B342A2C00274DB8 /* KFAudioDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDecoder.m; sourceTree = "<group>"; };
+		4009D63C2B34302E00274DB8 /* KFAudioDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioDecoderViewController.h; sourceTree = "<group>"; };
+		4009D63D2B34302E00274DB8 /* KFAudioDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDecoderViewController.m; sourceTree = "<group>"; };
 		6F00088F2B32A5BF00DC776A /* KFMuxerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMuxerConfig.h; sourceTree = "<group>"; };
 		6F0008902B32A5BF00DC776A /* KFMuxerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMuxerConfig.m; sourceTree = "<group>"; };
 		6F0008922B32A5FE00DC776A /* KFMediaBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMediaBase.h; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 				6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */,
 				6F0008A42B3311EE00DC776A /* KFAudioDemuxerViewController.h */,
 				6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */,
+				4009D63C2B34302E00274DB8 /* KFAudioDecoderViewController.h */,
+				4009D63D2B34302E00274DB8 /* KFAudioDecoderViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -169,6 +177,8 @@
 				4009D6302B32881700274DB8 /* KFAudioEncoder.m */,
 				4009D6362B32961800274DB8 /* KFAudioTools.h */,
 				4009D6372B32961800274DB8 /* KFAudioTools.m */,
+				4009D6392B342A2C00274DB8 /* KFAudioDecoder.h */,
+				4009D63A2B342A2C00274DB8 /* KFAudioDecoder.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -247,11 +257,13 @@
 				6FB307002B31C17B008ABA51 /* KFAudioConfig.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
 				4009D6382B32961800274DB8 /* KFAudioTools.m in Sources */,
+				4009D63B2B342A2C00274DB8 /* KFAudioDecoder.m in Sources */,
 				6F0008912B32A5BF00DC776A /* KFMuxerConfig.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
 				6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */,
 				6F00089E2B330F8400DC776A /* KFDemuxerConfig.m in Sources */,
 				4009D6312B32881700274DB8 /* KFAudioEncoder.m in Sources */,
+				4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */,
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
 				6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */,
