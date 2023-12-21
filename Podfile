@@ -1,8 +1,7 @@
-#Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
 
 target 'AVDemo' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  project 'AVDemo'
   pod 'Debugo'
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1',:dev_env => 'dev'
 end
