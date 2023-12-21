@@ -27,11 +27,11 @@
 		6FB307002B31C17B008ABA51 /* KFAudioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306FF2B31C17B008ABA51 /* KFAudioConfig.m */; };
 		6FB307032B31C3BD008ABA51 /* KFAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB307022B31C3BD008ABA51 /* KFAudioCapture.m */; };
 		6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */; };
-		79D972BF93BFDC23D5F04ED2 /* Pods_KFAudioDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184E0B1687B173364887586D /* Pods_KFAudioDemo.framework */; };
+		A187B1A2B1E6DC86B850949C /* libPods-KFAudioDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F9F23D64B7C3B86305D960 /* libPods-KFAudioDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		184E0B1687B173364887586D /* Pods_KFAudioDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFAudioDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F9F23D64B7C3B86305D960 /* libPods-KFAudioDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFAudioDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4009D62F2B32881700274DB8 /* KFAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioEncoder.h; sourceTree = "<group>"; };
 		4009D6302B32881700274DB8 /* KFAudioEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioEncoder.m; sourceTree = "<group>"; };
 		4009D6332B3295BB00274DB8 /* KFAudioEncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioEncoderViewController.h; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D972BF93BFDC23D5F04ED2 /* Pods_KFAudioDemo.framework in Frameworks */,
+				A187B1A2B1E6DC86B850949C /* libPods-KFAudioDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,7 @@
 		DE5486E6CA0FEE89D35EBF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				184E0B1687B173364887586D /* Pods_KFAudioDemo.framework */,
+				38F9F23D64B7C3B86305D960 /* libPods-KFAudioDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				9353E3AB3E0EB9847D7E4C95 /* Pods-KFAudioDemo.debug.xcconfig */,
 				AC035EFBC9ED73E2361578E2 /* Pods-KFAudioDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -219,7 +218,7 @@
 				6FB306DD2B31C13E008ABA51 /* Sources */,
 				6FB306DE2B31C13E008ABA51 /* Frameworks */,
 				6FB306DF2B31C13E008ABA51 /* Resources */,
-				A51E84AC71374FC3FDDFDC36 /* [CP] Embed Pods Frameworks */,
+				3D112245B79B67080C629146 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,21 +275,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A51E84AC71374FC3FDDFDC36 /* [CP] Embed Pods Frameworks */ = {
+		3D112245B79B67080C629146 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ABF16A7FF591C57D7467868D /* [CP] Check Pods Manifest.lock */ = {
@@ -481,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8YXDL9F;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KFAudioDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -509,6 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8YXDL9F;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KFAudioDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
