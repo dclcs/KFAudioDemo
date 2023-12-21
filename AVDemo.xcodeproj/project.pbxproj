@@ -15,6 +15,7 @@
 		4009D6462B34B28B00274DB8 /* KFAudioRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6452B34B28B00274DB8 /* KFAudioRender.m */; };
 		4009D6492B34B31B00274DB8 /* KFAudioRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6482B34B31B00274DB8 /* KFAudioRenderViewController.m */; };
 		4009D64C2B34B3D200274DB8 /* KFWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D64B2B34B3D200274DB8 /* KFWeakProxy.m */; };
+		5CBBFCCAED3B0E35E7D93DB4 /* libPods-AVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBC867961B192B1A73C6AB7 /* libPods-AVDemo.a */; };
 		6F0008912B32A5BF00DC776A /* KFMuxerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008902B32A5BF00DC776A /* KFMuxerConfig.m */; };
 		6F0008982B32A70200DC776A /* KFMP4Muxer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008972B32A70200DC776A /* KFMP4Muxer.m */; };
 		6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */; };
@@ -30,11 +31,10 @@
 		6FB307002B31C17B008ABA51 /* KFAudioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306FF2B31C17B008ABA51 /* KFAudioConfig.m */; };
 		6FB307032B31C3BD008ABA51 /* KFAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB307022B31C3BD008ABA51 /* KFAudioCapture.m */; };
 		6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */; };
-		A187B1A2B1E6DC86B850949C /* libPods-KFAudioDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F9F23D64B7C3B86305D960 /* libPods-KFAudioDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38F9F23D64B7C3B86305D960 /* libPods-KFAudioDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFAudioDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBC867961B192B1A73C6AB7 /* libPods-AVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4009D62F2B32881700274DB8 /* KFAudioEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioEncoder.h; sourceTree = "<group>"; };
 		4009D6302B32881700274DB8 /* KFAudioEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioEncoder.m; sourceTree = "<group>"; };
 		4009D6332B3295BB00274DB8 /* KFAudioEncoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioEncoderViewController.h; sourceTree = "<group>"; };
@@ -51,6 +51,7 @@
 		4009D6482B34B31B00274DB8 /* KFAudioRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioRenderViewController.m; sourceTree = "<group>"; };
 		4009D64A2B34B3D200274DB8 /* KFWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFWeakProxy.h; sourceTree = "<group>"; };
 		4009D64B2B34B3D200274DB8 /* KFWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFWeakProxy.m; sourceTree = "<group>"; };
+		514D41A8A2BE38B19F1F79D7 /* Pods-AVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVDemo.release.xcconfig"; path = "Target Support Files/Pods-AVDemo/Pods-AVDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6F00088F2B32A5BF00DC776A /* KFMuxerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMuxerConfig.h; sourceTree = "<group>"; };
 		6F0008902B32A5BF00DC776A /* KFMuxerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMuxerConfig.m; sourceTree = "<group>"; };
 		6F0008922B32A5FE00DC776A /* KFMediaBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMediaBase.h; sourceTree = "<group>"; };
@@ -65,7 +66,7 @@
 		6F0008A42B3311EE00DC776A /* KFAudioDemuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioDemuxerViewController.h; sourceTree = "<group>"; };
 		6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDemuxerViewController.m; sourceTree = "<group>"; };
 		6F0008A72B33125C00DC776A /* input.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = input.mp4; sourceTree = "<group>"; };
-		6FB306E12B31C13E008ABA51 /* KFAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB306E12B31C13E008ABA51 /* AVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB306E42B31C13E008ABA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB306E52B31C13E008ABA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6FB306EA2B31C13E008ABA51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioCaptureViewController.m; sourceTree = "<group>"; };
 		9353E3AB3E0EB9847D7E4C95 /* Pods-KFAudioDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFAudioDemo.debug.xcconfig"; path = "Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC035EFBC9ED73E2361578E2 /* Pods-KFAudioDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFAudioDemo.release.xcconfig"; path = "Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EBC72D17BF6FA23DE480869D /* Pods-AVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVDemo/Pods-AVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A187B1A2B1E6DC86B850949C /* libPods-KFAudioDemo.a in Frameworks */,
+				5CBBFCCAED3B0E35E7D93DB4 /* libPods-AVDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +197,7 @@
 		6FB306D82B31C13E008ABA51 = {
 			isa = PBXGroup;
 			children = (
-				6FB306E32B31C13E008ABA51 /* KFAudioDemo */,
+				6FB306E32B31C13E008ABA51 /* AVDemo */,
 				6FB306E22B31C13E008ABA51 /* Products */,
 				EF93644D90119FC158FE67D4 /* Pods */,
 				DE5486E6CA0FEE89D35EBF6A /* Frameworks */,
@@ -205,12 +207,12 @@
 		6FB306E22B31C13E008ABA51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FB306E12B31C13E008ABA51 /* KFAudioDemo.app */,
+				6FB306E12B31C13E008ABA51 /* AVDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FB306E32B31C13E008ABA51 /* KFAudioDemo */ = {
+		6FB306E32B31C13E008ABA51 /* AVDemo */ = {
 			isa = PBXGroup;
 			children = (
 				6F0008A72B33125C00DC776A /* input.mp4 */,
@@ -226,7 +228,7 @@
 				6FB306F52B31C13F008ABA51 /* Info.plist */,
 				6FB306F62B31C13F008ABA51 /* main.m */,
 			);
-			path = KFAudioDemo;
+			path = AVDemo;
 			sourceTree = "<group>";
 		};
 		6FB306FD2B31C14D008ABA51 /* Audio */ = {
@@ -248,7 +250,7 @@
 		DE5486E6CA0FEE89D35EBF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38F9F23D64B7C3B86305D960 /* libPods-KFAudioDemo.a */,
+				2EBC867961B192B1A73C6AB7 /* libPods-AVDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -258,6 +260,8 @@
 			children = (
 				9353E3AB3E0EB9847D7E4C95 /* Pods-KFAudioDemo.debug.xcconfig */,
 				AC035EFBC9ED73E2361578E2 /* Pods-KFAudioDemo.release.xcconfig */,
+				EBC72D17BF6FA23DE480869D /* Pods-AVDemo.debug.xcconfig */,
+				514D41A8A2BE38B19F1F79D7 /* Pods-AVDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -265,9 +269,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FB306E02B31C13E008ABA51 /* KFAudioDemo */ = {
+		6FB306E02B31C13E008ABA51 /* AVDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FB306FA2B31C13F008ABA51 /* Build configuration list for PBXNativeTarget "KFAudioDemo" */;
+			buildConfigurationList = 6FB306FA2B31C13F008ABA51 /* Build configuration list for PBXNativeTarget "AVDemo" */;
 			buildPhases = (
 				ABF16A7FF591C57D7467868D /* [CP] Check Pods Manifest.lock */,
 				6FB306DD2B31C13E008ABA51 /* Sources */,
@@ -279,9 +283,9 @@
 			);
 			dependencies = (
 			);
-			name = KFAudioDemo;
+			name = AVDemo;
 			productName = KFAudioDemo;
-			productReference = 6FB306E12B31C13E008ABA51 /* KFAudioDemo.app */;
+			productReference = 6FB306E12B31C13E008ABA51 /* AVDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -298,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FB306DC2B31C13E008ABA51 /* Build configuration list for PBXProject "KFAudioDemo" */;
+			buildConfigurationList = 6FB306DC2B31C13E008ABA51 /* Build configuration list for PBXProject "AVDemo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -311,7 +315,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FB306E02B31C13E008ABA51 /* KFAudioDemo */,
+				6FB306E02B31C13E008ABA51 /* AVDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -336,15 +340,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AVDemo/Pods-AVDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AVDemo/Pods-AVDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KFAudioDemo/Pods-KFAudioDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVDemo/Pods-AVDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ABF16A7FF591C57D7467868D /* [CP] Check Pods Manifest.lock */ = {
@@ -362,7 +366,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KFAudioDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AVDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -531,7 +535,7 @@
 		};
 		6FB306FB2B31C13F008ABA51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9353E3AB3E0EB9847D7E4C95 /* Pods-KFAudioDemo.debug.xcconfig */;
+			baseConfigurationReference = EBC72D17BF6FA23DE480869D /* Pods-AVDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -540,7 +544,7 @@
 				DEVELOPMENT_TEAM = U4M8YXDL9F;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KFAudioDemo/Info.plist;
+				INFOPLIST_FILE = AVDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -560,7 +564,7 @@
 		};
 		6FB306FC2B31C13F008ABA51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC035EFBC9ED73E2361578E2 /* Pods-KFAudioDemo.release.xcconfig */;
+			baseConfigurationReference = 514D41A8A2BE38B19F1F79D7 /* Pods-AVDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,7 +573,7 @@
 				DEVELOPMENT_TEAM = U4M8YXDL9F;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KFAudioDemo/Info.plist;
+				INFOPLIST_FILE = AVDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -590,7 +594,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FB306DC2B31C13E008ABA51 /* Build configuration list for PBXProject "KFAudioDemo" */ = {
+		6FB306DC2B31C13E008ABA51 /* Build configuration list for PBXProject "AVDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FB306F82B31C13F008ABA51 /* Debug */,
@@ -599,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FB306FA2B31C13F008ABA51 /* Build configuration list for PBXNativeTarget "KFAudioDemo" */ = {
+		6FB306FA2B31C13F008ABA51 /* Build configuration list for PBXNativeTarget "AVDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FB306FB2B31C13F008ABA51 /* Debug */,
