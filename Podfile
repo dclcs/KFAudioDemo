@@ -1,4 +1,5 @@
 platform :ios, '13.0'
+use_frameworks!
 
 target 'AVDemo' do
   project 'AVDemo'

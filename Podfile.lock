@@ -1,0 +1,36 @@
+PODS:
+  - Debugo (0.4.0):
+    - Debugo/Core (= 0.4.0)
+  - Debugo/Core (0.4.0):
+    - FMDB (>= 2.7.2)
+  - DebugTool (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - KFAVKit (0.1.0)
+
+DEPENDENCIES:
+  - Debugo
+  - DebugTool (from `./developing_pods/DebugTool`)
+  - KFAVKit (from `./developing_pods/KFAVKit`)
+
+SPEC REPOS:
+  trunk:
+    - Debugo
+    - FMDB
+
+EXTERNAL SOURCES:
+  DebugTool:
+    :path: "./developing_pods/DebugTool"
+  KFAVKit:
+    :path: "./developing_pods/KFAVKit"
+
+SPEC CHECKSUMS:
+  Debugo: 7ea74eca356172e17622b6de46a8f2f9e97724ae
+  DebugTool: f4d6590d80ecc2fb0a1a528967fff435112f0cf7
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  KFAVKit: f6c89eeef8354ab0d136a116c5468afdb0434556
+
+PODFILE CHECKSUM: 96a0e420a3eec20906fac0346c7537d0f3c475a7
+
+COCOAPODS: 1.11.3

@@ -7,7 +7,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import <Debugo/Debugo.h>
+//#import <Debugo/Debugo.h>
+#import <DebugTool/DebugTool-Swift.h>
 
 @interface AppDelegate ()
 @end
@@ -22,9 +23,12 @@
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
-    [Debugo fireWithConfiguration:^(DGConfiguration * _Nonnull configuration) {
-        // 配置 configuration，定制你的需求
-    }];
+//    [Debugo fireWithConfiguration:^(DGConfiguration * _Nonnull configuration) {
+//        // 配置 configuration，定制你的需求
+//    }];
+    
+    [DebugTool fireWithConfiguration];
+    
     return YES;
 }
 
