@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-//#import <Debugo/Debugo.h>
+#import <Debugo/Debugo.h>
 #import <DebugTool/DebugTool-Swift.h>
 
 @interface AppDelegate ()
