@@ -2,8 +2,10 @@ platform :ios, '13.0'
 
 target 'AVDemo' do
   project 'AVDemo'
+  supports_swift_versions '>= 5.0'
   pod 'Debugo'
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1',:dev_env => 'dev'
+  pod 'DebugTool', :git => 'https://github.com/dclcs/DebugTool.git', :branch => 'main', :tag => '0.0.1',:dev_env => 'dev'
 end
 
 post_install do |installer|
