@@ -23,9 +23,9 @@
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
-//    [Debugo fireWithConfiguration:^(DGConfiguration * _Nonnull configuration) {
-//        // 配置 configuration，定制你的需求
-//    }];
+    [Debugo fireWithConfiguration:^(DGConfiguration * _Nonnull configuration) {
+        // 配置 configuration，定制你的需求
+    }];
     
     [DebugTool fireWithConfiguration];
     
