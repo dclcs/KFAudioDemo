@@ -1,0 +1,12 @@
+[submodule "developing_pods/KFAVKit"]
+	path = developing_pods/KFAVKit
+	url = https://github.com/dclcs/KFAVKit.git
+	branch = main
+[submodule "developing_pods/DebugTool"]
+	path = developing_pods/DebugTool
+	url = https://github.com/dclcs/DebugTool.git
+	branch = main
+[submodule "developing_pods/ToyImageLoader"]
+	path = developing_pods/ToyImageLoader
+	url = https://github.com/dclcs/ToyImageLoader.git
+	branch = main
