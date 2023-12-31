@@ -8,7 +8,7 @@
 
 #import "KFAudioCaptureViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "KFAudioCapture.h"
+#import <KFAVKit/KFAudioCapture.h>
 
 @interface KFAudioCaptureViewController ()
 @property (nonatomic, strong) KFAudioConfig *audioConfig;

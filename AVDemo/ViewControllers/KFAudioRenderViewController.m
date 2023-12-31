@@ -7,10 +7,10 @@
 
 #import "KFAudioRenderViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "KFAudioRender.h"
-#import "KFMP4Demuxer.h"
-#import "KFAudioDecoder.h"
-#import "KFWeakProxy.h"
+#import <KFAVKit/KFAudioRender.h>
+#import <KFAVKit/KFMP4Demuxer.h>
+#import <KFAVKit/KFAudioDecoder.h>
+#import <KFAVKit/KFWeakProxy.h>
 
 #define KFDecoderMaxCache 4096 * 5 // 解码数据缓冲区最大长度。
 
