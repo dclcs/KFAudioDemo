@@ -17,7 +17,8 @@
     [super viewDidLoad];
     UIImageView *imageView = [UIImageView new];
     NSMutableArray<NSString *> *objects = [NSMutableArray arrayWithObjects:
-                @"https://www.httpwatch.com/httpgallery/authentication/authenticatedimage/default.aspx?0.35786508303135633",     // requires HTTP auth, used to demo the NTLM auth
+                   @"https://placehold.co/200x200.jpg",
+//                @"https://www.httpwatch.com/httpgallery/authentication/authenticatedimage/default.aspx?0.35786508303135633",     // requires HTTP auth, used to demo the NTLM auth
                 @"http://assets.sbnation.com/assets/2512203/dogflops.gif",
                 @"https://raw.githubusercontent.com/liyong03/YLGIFImage/master/YLGIFImageDemo/YLGIFImageDemo/joy.gif",
                 @"http://apng.onevcat.com/assets/elephant.png",
@@ -34,11 +35,6 @@
                 @"https://res.cloudinary.com/dwpjzbyux/raw/upload/v1666474070/RawDemo/raw_vebed5.NEF",
                 @"https://placehold.co/200x200.jpg",
                 nil];
-    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
-    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
-    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
-    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
-    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
     [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
 
 }
