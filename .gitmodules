@@ -1,4 +1,0 @@
-[submodule "developing_pods/ToyImageLoader"]
-	path = developing_pods/ToyImageLoader
-	url = https://github.com/dclcs/ToyImageLoader.git
-	branch = main
