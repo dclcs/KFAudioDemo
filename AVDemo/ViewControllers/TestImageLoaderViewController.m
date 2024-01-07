@@ -15,9 +15,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = UIColor.whiteColor;
     UIImageView *imageView = [UIImageView new];
+    imageView.frame = CGRectMake(100, 300, 100, 100);
+//    imageView.backgroundColor = UIColor.blueColor;
     NSMutableArray<NSString *> *objects = [NSMutableArray arrayWithObjects:
-                   @"https://placehold.co/200x200.jpg",
+                   @"https://nr-platform.s3.amazonaws.com/uploads/platform/published_extension/branding_icon/275/AmazonS3.png",
 //                @"https://www.httpwatch.com/httpgallery/authentication/authenticatedimage/default.aspx?0.35786508303135633",     // requires HTTP auth, used to demo the NTLM auth
                 @"http://assets.sbnation.com/assets/2512203/dogflops.gif",
                 @"https://raw.githubusercontent.com/liyong03/YLGIFImage/master/YLGIFImageDemo/YLGIFImageDemo/joy.gif",
@@ -37,8 +40,21 @@
                 nil];
     [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
 
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.backgroundColor = UIColor.redColor;
+    
+    [self.view addSubview:imageView];
+    
 }
 
+
+- (void)btnClicked
+{
+    NSLog(@"clickTest");
+    [TestManager.defaultManager test];
+}
 /*
 #pragma mark - Navigation
 
