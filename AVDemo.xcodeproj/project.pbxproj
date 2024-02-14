@@ -16,6 +16,7 @@
 		6F0008A82B33125C00DC776A /* input.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6F0008A72B33125C00DC776A /* input.mp4 */; };
 		6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F649FE12B418F720078E21A /* TestImageLoaderViewController.m */; };
 		6F9A09122B7CE05E00CE906D /* InterviewGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */; };
+		6F9A09162B7CE63300CE906D /* InterviewSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A09152B7CE63300CE906D /* InterviewSemaphoreViewController.m */; };
 		6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306E52B31C13E008ABA51 /* AppDelegate.m */; };
 		6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306EB2B31C13E008ABA51 /* ViewController.m */; };
 		6FB306F12B31C13F008ABA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB306F02B31C13F008ABA51 /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 		6F649FE12B418F720078E21A /* TestImageLoaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageLoaderViewController.m; sourceTree = "<group>"; };
 		6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewGCDViewController.h; sourceTree = "<group>"; };
 		6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewGCDViewController.m; sourceTree = "<group>"; };
+		6F9A09142B7CE63300CE906D /* InterviewSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewSemaphoreViewController.h; sourceTree = "<group>"; };
+		6F9A09152B7CE63300CE906D /* InterviewSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewSemaphoreViewController.m; sourceTree = "<group>"; };
 		6FB306E12B31C13E008ABA51 /* AVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB306E42B31C13E008ABA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB306E52B31C13E008ABA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		4009D6322B32959F00274DB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F9A09132B7CE37A00CE906D /* Interview */,
 				6FB307042B31D28D008ABA51 /* KFAudioCaptureViewController.h */,
 				6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */,
 				4009D6332B3295BB00274DB8 /* KFAudioEncoderViewController.h */,
@@ -86,10 +90,19 @@
 				4009D6482B34B31B00274DB8 /* KFAudioRenderViewController.m */,
 				6F649FE02B418F720078E21A /* TestImageLoaderViewController.h */,
 				6F649FE12B418F720078E21A /* TestImageLoaderViewController.m */,
-				6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */,
-				6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F9A09132B7CE37A00CE906D /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */,
+				6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */,
+				6F9A09142B7CE63300CE906D /* InterviewSemaphoreViewController.h */,
+				6F9A09152B7CE63300CE906D /* InterviewSemaphoreViewController.m */,
+			);
+			path = Interview;
 			sourceTree = "<group>";
 		};
 		6FB306D82B31C13E008ABA51 = {
@@ -261,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
+				6F9A09162B7CE63300CE906D /* InterviewSemaphoreViewController.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
 				6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */,

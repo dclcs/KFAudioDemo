@@ -34,8 +34,8 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     self.demoTitle = @[@"DEMOS", @"面试相关"];
-    self.demoList = @[@[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer", @"Audio Decoder", @"Audio Render", @"TestImageLoader"], @[@"多线程相关"]];
-    self.demoPageNameList = @[@[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController", @"KFAudioDecoderViewController", @"KFAudioRenderViewController", @"TestImageLoaderViewController"], @[@"InterviewGCDViewController"]];
+    self.demoList = @[@[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer", @"Audio Decoder", @"Audio Render", @"TestImageLoader"], @[@"多线程相关", @"信号量使用"]];
+    self.demoPageNameList = @[@[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController", @"KFAudioDecoderViewController", @"KFAudioRenderViewController", @"TestImageLoaderViewController"], @[@"InterviewGCDViewController", @"InterviewSemaphoreViewController"]];
     
     [self setupUI];
 }
