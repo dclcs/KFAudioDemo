@@ -81,3 +81,6 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,objective-c
+/.DS_Store
+/KFAudioDemo.xcodeproj/project.xcworkspace/xcuserdata/cld.xcuserdatad/UserInterfaceState.xcuserstate
+/Podfile.lock

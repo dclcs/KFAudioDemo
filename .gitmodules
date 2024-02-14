@@ -1,4 +1,4 @@
-[submodule "developing_pods/KFAVKit"]
-	path = developing_pods/KFAVKit
-	url = https://github.com/dclcs/KFAVKit.git
+[submodule "developing_pods/ToyImageLoader"]
+	path = developing_pods/ToyImageLoader
+	url = https://github.com/dclcs/ToyImageLoader.git
 	branch = main

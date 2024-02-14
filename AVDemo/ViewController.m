@@ -12,6 +12,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) UITableView *myTableView;
 @property (copy, nonatomic) NSArray *demoList;
+@property (copy, nonatomic) NSArray *demoTitle;
 @property (copy, nonatomic) NSArray *demoPageNameList;
 @end
 
@@ -32,8 +33,9 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-    self.demoList = @[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer", @"Audio Decoder", @"Audio Render"];
-    self.demoPageNameList = @[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController", @"KFAudioDecoderViewController", @"KFAudioRenderViewController"];
+    self.demoTitle = @[@"DEMOS", @"面试相关"];
+    self.demoList = @[@[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer", @"Audio Decoder", @"Audio Render", @"TestImageLoader"], @[@"多线程相关"]];
+    self.demoPageNameList = @[@[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController", @"KFAudioDecoderViewController", @"KFAudioRenderViewController", @"TestImageLoaderViewController"], @[@"InterviewGCDViewController"]];
     
     [self setupUI];
 }
@@ -67,7 +69,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self goToDemoPageWithViewControllerName:self.demoPageNameList[indexPath.row]];
+    [self goToDemoPageWithViewControllerName:self.demoPageNameList[indexPath.section][indexPath.row]];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -76,15 +78,15 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.demoList.count;
 }
 
 - (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Demos";
+    return self.demoTitle[section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.demoList.count;
+    return ((NSArray *)self.demoList[section]).count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -93,7 +95,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:KFMainTableCellIdentifier];
     }
     
-    NSString *demoTitle = self.demoList[indexPath.row];
+    NSString *demoTitle = self.demoList[indexPath.section][indexPath.row];
     cell.textLabel.text = demoTitle;
     
     return cell;
