@@ -6,6 +6,12 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+
+### rust
+toy/.idea/
+toy/Cargo.lock
+toy/target/
+
 ## User settings
 xcuserdata/
 .DS_Store
@@ -84,3 +90,8 @@ iOSInjectionProject/
 /.DS_Store
 /KFAudioDemo.xcodeproj/project.xcworkspace/xcuserdata/cld.xcuserdatad/UserInterfaceState.xcuserstate
 /Podfile.lock
+
+
+# Added by cargo
+
+/target

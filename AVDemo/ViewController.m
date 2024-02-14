@@ -6,14 +6,14 @@
 //
 
 #import "ViewController.h"
-
+#import "DemosModel.h"
 static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) UITableView *myTableView;
-@property (copy, nonatomic) NSArray *demoList;
-@property (copy, nonatomic) NSArray *demoTitle;
-@property (copy, nonatomic) NSArray *demoPageNameList;
+
+@property (nonatomic, strong) NSArray<NSArray<DemosModel *> *> *demos;
+@property (nonatomic, strong) NSArray *demoTitle;
 @end
 
 @implementation ViewController
@@ -29,14 +29,39 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
     return _myTableView;
 }
 
+
+- (void)mockDemos
+{
+    // AVS
+    DemosModel *d0 = [[DemosModel alloc] initWithTitle:@"Audio Capture" target:@"KFAudioCaptureViewController" type:DemoTypeAV];
+    DemosModel *d1 = [[DemosModel alloc] initWithTitle:@"Audio Encoder" target:@"KFAudioEncoderViewController" type:DemoTypeAV];
+    DemosModel *d2 = [[DemosModel alloc] initWithTitle:@"Audio Muxer" target:@"KFAudioMuxerViewController" type:DemoTypeAV];
+    DemosModel *d3 = [[DemosModel alloc] initWithTitle:@"Audio Demuxer" target:@"KFAudioDemuxerViewController" type:DemoTypeAV];
+    DemosModel *d4 = [[DemosModel alloc] initWithTitle:@"Audio Decoder" target:@"KFAudioDecoderViewController" type:DemoTypeAV];
+    DemosModel *d5 = [[DemosModel alloc] initWithTitle:@"Audio Render" target:@"KFAudioRenderViewController" type:DemoTypeAV];
+    
+    
+    // Toy
+    DemosModel *d6 = [[DemosModel alloc] initWithTitle:@"TestImageLoader" target:@"TestImageLoaderViewController" type:DemoTypeToy];
+    
+    // Interview
+    DemosModel *d7 = [[DemosModel alloc] initWithTitle:@"多线程相关" target:@"InterviewGCDViewController" type:DemoTypeInterview];
+    DemosModel *d8 = [[DemosModel alloc] initWithTitle:@"信号量使用" target:@"InterviewSemaphoreViewController" type:DemoTypeInterview];
+    
+    
+    self.demos = @[@[d0, d1, d2, d3, d4, d5], @[d6], @[d7, d8]];
+    
+//    self.demoTitle = [[NSDictionary alloc] initWithObjects:@[@(DemoTypeAV), @(DemoTypeToy), @(DemoTypeInterview)] forKeys:@[@"Audio & Video", @"ToyImageLoader", @"InterView"]];
+    self.demoTitle = @[@"Audio & Video", @"ToyImageLoader", @"InterView"];
+
+}
+
+
 #pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-    self.demoTitle = @[@"DEMOS", @"面试相关"];
-    self.demoList = @[@[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer", @"Audio Decoder", @"Audio Render", @"TestImageLoader"], @[@"多线程相关", @"信号量使用"]];
-    self.demoPageNameList = @[@[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController", @"KFAudioDecoderViewController", @"KFAudioRenderViewController", @"TestImageLoaderViewController"], @[@"InterviewGCDViewController", @"InterviewSemaphoreViewController"]];
-    
+    [self mockDemos];
     [self setupUI];
 }
 
@@ -69,7 +94,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self goToDemoPageWithViewControllerName:self.demoPageNameList[indexPath.section][indexPath.row]];
+    [self goToDemoPageWithViewControllerName:self.demos[indexPath.section][indexPath.row].target];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -78,7 +103,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.demoList.count;
+    return self.demos.count;
 }
 
 - (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -86,7 +111,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return ((NSArray *)self.demoList[section]).count;
+    return ((NSArray *)self.demos[section]).count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -95,7 +120,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:KFMainTableCellIdentifier];
     }
     
-    NSString *demoTitle = self.demoList[indexPath.section][indexPath.row];
+    NSString *demoTitle = self.demos[indexPath.section][indexPath.row].title;
     cell.textLabel.text = demoTitle;
     
     return cell;
