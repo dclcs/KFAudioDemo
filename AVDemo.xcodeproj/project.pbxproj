@@ -14,6 +14,8 @@
 		6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */; };
 		6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */; };
 		6F0008A82B33125C00DC776A /* input.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6F0008A72B33125C00DC776A /* input.mp4 */; };
+		6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F649FE12B418F720078E21A /* TestImageLoaderViewController.m */; };
+		6F9A09122B7CE05E00CE906D /* InterviewGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */; };
 		6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306E52B31C13E008ABA51 /* AppDelegate.m */; };
 		6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306EB2B31C13E008ABA51 /* ViewController.m */; };
 		6FB306F12B31C13F008ABA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB306F02B31C13F008ABA51 /* Assets.xcassets */; };
@@ -36,6 +38,10 @@
 		6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDemuxerViewController.m; sourceTree = "<group>"; };
 		6F0008A72B33125C00DC776A /* input.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = input.mp4; sourceTree = "<group>"; };
 		6F268E802B350C3000ECC7AE /* AVDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F649FE02B418F720078E21A /* TestImageLoaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageLoaderViewController.h; sourceTree = "<group>"; };
+		6F649FE12B418F720078E21A /* TestImageLoaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageLoaderViewController.m; sourceTree = "<group>"; };
+		6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewGCDViewController.h; sourceTree = "<group>"; };
+		6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewGCDViewController.m; sourceTree = "<group>"; };
 		6FB306E12B31C13E008ABA51 /* AVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB306E42B31C13E008ABA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB306E52B31C13E008ABA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +84,10 @@
 				4009D63D2B34302E00274DB8 /* KFAudioDecoderViewController.m */,
 				4009D6472B34B31B00274DB8 /* KFAudioRenderViewController.h */,
 				4009D6482B34B31B00274DB8 /* KFAudioRenderViewController.m */,
+				6F649FE02B418F720078E21A /* TestImageLoaderViewController.h */,
+				6F649FE12B418F720078E21A /* TestImageLoaderViewController.m */,
+				6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */,
+				6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -253,7 +263,9 @@
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
+				6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */,
 				6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */,
+				6F9A09122B7CE05E00CE906D /* InterviewGCDViewController.m in Sources */,
 				4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */,
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
 				4009D6492B34B31B00274DB8 /* KFAudioRenderViewController.m in Sources */,
