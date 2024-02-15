@@ -34,10 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *target; // 跳转vc的名字
 
-@property (nonatomic, assign) DemoType type;
+@property (nonatomic, assign) int type;
 
-
-- (instancetype)initWithTitle:(NSString *)title target:(NSString *)target type:(DemoType)type;
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
 @end
 

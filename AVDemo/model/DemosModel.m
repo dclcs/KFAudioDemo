@@ -9,14 +9,13 @@
 
 @implementation DemosModel
 
-- (instancetype)initWithTitle:(NSString *)title target:(NSString *)target type:(DemoType)type
-{
+
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary {
     if (self = [super init]) {
-        _title = title;
-        _target = target;
-        _type = type;
+        self.target = dictionary[@"target"];
+        self.title = dictionary[@"title"];
+        self.type = ((NSString *)dictionary[@"type"]).intValue;
     }
-    
     return self;
 }
 

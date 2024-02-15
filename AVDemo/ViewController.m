@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "DemosModel.h"
+#import "DemosHelper.h"
 static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -30,33 +31,14 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 }
 
 
-- (void)mockDemos
+- (void)readDemoJSON
 {
-    // AVS
-    DemosModel *d0 = [[DemosModel alloc] initWithTitle:@"Audio Capture" target:@"KFAudioCaptureViewController" type:DemoTypeAV];
-    DemosModel *d1 = [[DemosModel alloc] initWithTitle:@"Audio Encoder" target:@"KFAudioEncoderViewController" type:DemoTypeAV];
-    DemosModel *d2 = [[DemosModel alloc] initWithTitle:@"Audio Muxer" target:@"KFAudioMuxerViewController" type:DemoTypeAV];
-    DemosModel *d3 = [[DemosModel alloc] initWithTitle:@"Audio Demuxer" target:@"KFAudioDemuxerViewController" type:DemoTypeAV];
-    DemosModel *d4 = [[DemosModel alloc] initWithTitle:@"Audio Decoder" target:@"KFAudioDecoderViewController" type:DemoTypeAV];
-    DemosModel *d5 = [[DemosModel alloc] initWithTitle:@"Audio Render" target:@"KFAudioRenderViewController" type:DemoTypeAV];
     
+    NSDictionary *dicts = [DemosHelper readLocalFileWithName:@"demo"];
+    self.demoTitle = [DemosHelper parseTitles:dicts];
     
-    // Toy
-    DemosModel *d6 = [[DemosModel alloc] initWithTitle:@"TestImageLoader" target:@"TestImageLoaderViewController" type:DemoTypeToy];
+    self.demos = [DemosHelper parseModels:dicts withTitles:self.demoTitle];
     
-    // Interview
-    DemosModel *d7 = [[DemosModel alloc] initWithTitle:@"多线程相关" target:@"InterviewGCDViewController" type:DemoTypeInterview];
-    DemosModel *d8 = [[DemosModel alloc] initWithTitle:@"信号量使用" target:@"InterviewSemaphoreViewController" type:DemoTypeInterview];
-    DemosModel *d9 = [[DemosModel alloc] initWithTitle:@"NSOperation使用" target:@"InterviewOperationViewController" type:DemoTypeInterview];
-    DemosModel *d10 = [[DemosModel alloc] initWithTitle:@"常驻线程" target:@"InterviewResidentThreadViewController" type:DemoTypeInterview];
-    DemosModel *d11 = [[DemosModel alloc] initWithTitle:@"读写锁" target:@"InterviewRWLockViewController" type:DemoTypeInterview];
-
-    
-    self.demos = @[@[d0, d1, d2, d3, d4, d5], @[d6], @[d7, d8, d9, d10, d11]];
-    
-//    self.demoTitle = [[NSDictionary alloc] initWithObjects:@[@(DemoTypeAV), @(DemoTypeToy), @(DemoTypeInterview)] forKeys:@[@"Audio & Video", @"ToyImageLoader", @"InterView"]];
-    self.demoTitle = @[@"Audio & Video", @"ToyImageLoader", @"InterView"];
-
 }
 
 
@@ -64,7 +46,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-    [self mockDemos];
+    [self readDemoJSON];
     [self setupUI];
 }
 
