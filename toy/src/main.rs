@@ -9,5 +9,8 @@ fn main() {
         process::exit(1);
     });
 
-    println!("print {:?}", config);
+    println!("{:?}", config);
+
+    // 默认解析目录 ../AVDemo
+    // 默认解析json ../demo.json
 }
