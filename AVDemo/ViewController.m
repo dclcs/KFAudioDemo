@@ -47,9 +47,12 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
     // Interview
     DemosModel *d7 = [[DemosModel alloc] initWithTitle:@"多线程相关" target:@"InterviewGCDViewController" type:DemoTypeInterview];
     DemosModel *d8 = [[DemosModel alloc] initWithTitle:@"信号量使用" target:@"InterviewSemaphoreViewController" type:DemoTypeInterview];
+    DemosModel *d9 = [[DemosModel alloc] initWithTitle:@"NSOperation使用" target:@"InterviewOperationViewController" type:DemoTypeInterview];
+    DemosModel *d10 = [[DemosModel alloc] initWithTitle:@"常驻线程" target:@"InterviewResidentThreadViewController" type:DemoTypeInterview];
+    DemosModel *d11 = [[DemosModel alloc] initWithTitle:@"读写锁" target:@"InterviewRWLockViewController" type:DemoTypeInterview];
+
     
-    
-    self.demos = @[@[d0, d1, d2, d3, d4, d5], @[d6], @[d7, d8]];
+    self.demos = @[@[d0, d1, d2, d3, d4, d5], @[d6], @[d7, d8, d9, d10, d11]];
     
 //    self.demoTitle = [[NSDictionary alloc] initWithObjects:@[@(DemoTypeAV), @(DemoTypeToy), @(DemoTypeInterview)] forKeys:@[@"Audio & Video", @"ToyImageLoader", @"InterView"]];
     self.demoTitle = @[@"Audio & Video", @"ToyImageLoader", @"InterView"];
