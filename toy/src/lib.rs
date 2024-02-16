@@ -28,7 +28,7 @@ pub fn parse_toy_demos(path: String, json_path: String) {
         let entry = entry.unwrap();
         println!("{:?}", entry.path());
         let file_type = entry.file_type().unwrap();
-        
+
     }
 }
 

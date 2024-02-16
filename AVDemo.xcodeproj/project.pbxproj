@@ -14,6 +14,9 @@
 		6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */; };
 		6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */; };
 		6F0008A82B33125C00DC776A /* input.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6F0008A72B33125C00DC776A /* input.mp4 */; };
+		6F0E7A532B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E7A522B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m */; };
+		6F0E7A562B7EFB560096B4D2 /* InterviewCOWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E7A552B7EFB560096B4D2 /* InterviewCOWViewController.m */; };
+		6F0E7A5A2B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E7A592B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m */; };
 		6F29CB402B7DB2DC0030C4E6 /* InterviewOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F29CB3F2B7DB2DC0030C4E6 /* InterviewOperationViewController.m */; };
 		6F29CB442B7DB3150030C4E6 /* InterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F29CB432B7DB3150030C4E6 /* InterOperation.m */; };
 		6F29CB472B7DBF840030C4E6 /* InterviewResidentThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F29CB462B7DBF840030C4E6 /* InterviewResidentThreadViewController.m */; };
@@ -46,6 +49,12 @@
 		6F0008A42B3311EE00DC776A /* KFAudioDemuxerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioDemuxerViewController.h; sourceTree = "<group>"; };
 		6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDemuxerViewController.m; sourceTree = "<group>"; };
 		6F0008A72B33125C00DC776A /* input.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = input.mp4; sourceTree = "<group>"; };
+		6F0E7A512B7EF4360096B4D2 /* InterviewDisplayLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewDisplayLinkViewController.h; sourceTree = "<group>"; };
+		6F0E7A522B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewDisplayLinkViewController.m; sourceTree = "<group>"; };
+		6F0E7A542B7EFB560096B4D2 /* InterviewCOWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewCOWViewController.h; sourceTree = "<group>"; };
+		6F0E7A552B7EFB560096B4D2 /* InterviewCOWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewCOWViewController.m; sourceTree = "<group>"; };
+		6F0E7A582B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutaleArray+SafeOp.h"; sourceTree = "<group>"; };
+		6F0E7A592B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutaleArray+SafeOp.m"; sourceTree = "<group>"; };
 		6F268E802B350C3000ECC7AE /* AVDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F29CB3E2B7DB2DC0030C4E6 /* InterviewOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewOperationViewController.h; sourceTree = "<group>"; };
 		6F29CB3F2B7DB2DC0030C4E6 /* InterviewOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewOperationViewController.m; sourceTree = "<group>"; };
@@ -104,6 +113,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		6F0E7A572B7F8D3A0096B4D2 /* SafeArray */ = {
+			isa = PBXGroup;
+			children = (
+				6F0E7A582B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.h */,
+				6F0E7A592B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m */,
+			);
+			path = SafeArray;
+			sourceTree = "<group>";
+		};
 		6F29CB3C2B7DB1630030C4E6 /* Audio&Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +162,7 @@
 		6F9A09132B7CE37A00CE906D /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				6F0E7A572B7F8D3A0096B4D2 /* SafeArray */,
 				6F29CB412B7DB2F40030C4E6 /* NSOperation */,
 				6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */,
 				6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */,
@@ -155,6 +174,10 @@
 				6F29CB462B7DBF840030C4E6 /* InterviewResidentThreadViewController.m */,
 				6F29CB482B7DC5420030C4E6 /* InterviewRWLockViewController.h */,
 				6F29CB492B7DC5420030C4E6 /* InterviewRWLockViewController.m */,
+				6F0E7A512B7EF4360096B4D2 /* InterviewDisplayLinkViewController.h */,
+				6F0E7A522B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m */,
+				6F0E7A542B7EFB560096B4D2 /* InterviewCOWViewController.h */,
+				6F0E7A552B7EFB560096B4D2 /* InterviewCOWViewController.m */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -343,12 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0E7A532B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m in Sources */,
 				6F29CB4A2B7DC5420030C4E6 /* InterviewRWLockViewController.m in Sources */,
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
 				6F9A09162B7CE63300CE906D /* InterviewSemaphoreViewController.m in Sources */,
 				6F29CB402B7DB2DC0030C4E6 /* InterviewOperationViewController.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
 				6F29CB472B7DBF840030C4E6 /* InterviewResidentThreadViewController.m in Sources */,
+				6F0E7A5A2B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
 				6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */,
 				6F29CB4F2B7E1A9B0030C4E6 /* DemosHelper.m in Sources */,
@@ -358,6 +383,7 @@
 				6F9A09122B7CE05E00CE906D /* InterviewGCDViewController.m in Sources */,
 				4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */,
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
+				6F0E7A562B7EFB560096B4D2 /* InterviewCOWViewController.m in Sources */,
 				4009D6492B34B31B00274DB8 /* KFAudioRenderViewController.m in Sources */,
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
 				6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */,
