@@ -69,6 +69,11 @@
             "title": "深拷贝和浅拷贝",
             "target": "InterviewCOWViewController",
             "type" : 2
+        },
+        {
+            "title": "Runloop Block Mgr",
+            "target": "InterviewBlockMgrViewController",
+            "type" : 2
         }
     ],
     "titles" : ["Audio & Video", "ToyImageLoader", "InterView" ]
