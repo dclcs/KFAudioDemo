@@ -7,6 +7,7 @@
 
 #import "TestImageLoaderViewController.h"
 #import <ToyImageLoader/UIImageView+Loader.h>
+#import <ToyImageLoader/TILImageManager.h>
 @interface TestImageLoaderViewController ()
 
 @end
@@ -20,8 +21,10 @@
     imageView.frame = CGRectMake(100, 300, 100, 100);
 //    imageView.backgroundColor = UIColor.blueColor;
     NSMutableArray<NSString *> *objects = [NSMutableArray arrayWithObjects:
-                   @"https://nr-platform.s3.amazonaws.com/uploads/platform/published_extension/branding_icon/275/AmazonS3.png",
+                                           @"https://i1.hdslb.com/bfs/face/75d844cc2e9add3d34e8b0245ad8e7c7a1c9e6e2.jpg",
+//                   @"https://nr-platform.s3.amazonaws.com/uploads/platform/published_extension/branding_icon/275/AmazonS3.png",
 //                @"https://www.httpwatch.com/httpgallery/authentication/authenticatedimage/default.aspx?0.35786508303135633",     // requires HTTP auth, used to demo the NTLM auth
+                                           @"https://i0.hdslb.com/bfs/sycp/creative_img/202402/3883da9be7e2b385426f06988f2e1003.jpg@336w_190h_!web-video-ad-cover.webp",
                 @"http://assets.sbnation.com/assets/2512203/dogflops.gif",
                 @"https://raw.githubusercontent.com/liyong03/YLGIFImage/master/YLGIFImageDemo/YLGIFImageDemo/joy.gif",
                 @"http://apng.onevcat.com/assets/elephant.png",
@@ -38,7 +41,8 @@
                 @"https://res.cloudinary.com/dwpjzbyux/raw/upload/v1666474070/RawDemo/raw_vebed5.NEF",
                 @"https://placehold.co/200x200.jpg",
                 nil];
-    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[NSURL URLWithString: objects.lastObject] ];
+//    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[UIImage imageNamed:@"placeholder"]];
+    [imageView tl_setImageWithURL:[NSURL URLWithString: objects.firstObject] placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -52,8 +56,7 @@
 
 - (void)btnClicked
 {
-    NSLog(@"clickTest");
-    [TestManager.defaultManager test];
+    [TILImageManager.sharedManager.imageCache clearWithCacheType:TILImageCacheTypeAll completion:nil];
 }
 /*
 #pragma mark - Navigation

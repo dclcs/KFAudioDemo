@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/xcode,objective-c
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,objective-c
-
+toy/.idea/
+toy/Cargo.lock
+toy/target/
 ### Objective-C ###
 # Xcode
 #
