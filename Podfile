@@ -7,7 +7,7 @@ target 'AVDemo' do
   pod 'Debugo'
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1', :dev_env => 'beta'
   pod 'DebugTool', :git => 'https://github.com/dclcs/DebugTool.git', :branch => 'main', :tag => '0.0.1',:dev_env => 'beta'
-  pod 'ToyImageLoader', :git => 'https://github.com/dclcs/ToyImageLoader.git', :branch => 'main', :tag => '0.0.2',:dev_env => 'dev'
+  pod 'ToyImageLoader', :git => 'https://github.com/dclcs/ToyImageLoader.git', :branch => 'main', :tag => '0.0.3',:dev_env => 'beta'
 end
 
 post_install do |installer|
