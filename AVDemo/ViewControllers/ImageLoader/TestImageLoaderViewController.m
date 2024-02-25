@@ -8,6 +8,7 @@
 #import "TestImageLoaderViewController.h"
 #import <ToyImageLoader/UIImageView+Loader.h>
 #import <ToyImageLoader/TILImageManager.h>
+#import <ToyImageLoader/UIView+Loader.h>
 @interface TestImageLoaderViewController ()
 
 @end
@@ -42,6 +43,9 @@
                 @"https://placehold.co/200x200.jpg",
                 nil];
 //    [imageView tl_loadImageWithURL: [NSURL URLWithString: objects.firstObject] placeholder:[UIImage imageNamed:@"placeholder"]];
+    if (!imageView.til_imageIndicator) {
+        imageView.til_imageIndicator = TILWebImageProgressIndicator.defaultIndicator;
+    }
     [imageView tl_setImageWithURL:[NSURL URLWithString: objects.firstObject] placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];

@@ -89,6 +89,7 @@
 		6FB306F62B31C13F008ABA51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FB307042B31D28D008ABA51 /* KFAudioCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioCaptureViewController.h; sourceTree = "<group>"; };
 		6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioCaptureViewController.m; sourceTree = "<group>"; };
+		6FCD8A092B85946700022433 /* InterviewGCDViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InterviewGCDViewController.cpp; sourceTree = "<group>"; };
 		6FF1A1CE2B803FD00084B428 /* InterviewBlockMgrViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewBlockMgrViewController.h; sourceTree = "<group>"; };
 		6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewBlockMgrViewController.m; sourceTree = "<group>"; };
 		6FF1A1D22B8040360084B428 /* BlockMonitorMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockMonitorMgr.h; sourceTree = "<group>"; };
@@ -172,6 +173,7 @@
 				6F0E7A572B7F8D3A0096B4D2 /* SafeArray */,
 				6F29CB412B7DB2F40030C4E6 /* NSOperation */,
 				6F9A09102B7CE05E00CE906D /* InterviewGCDViewController.h */,
+				6FCD8A092B85946700022433 /* InterviewGCDViewController.cpp */,
 				6F9A09112B7CE05E00CE906D /* InterviewGCDViewController.m */,
 				6F9A09142B7CE63300CE906D /* InterviewSemaphoreViewController.h */,
 				6F9A09152B7CE63300CE906D /* InterviewSemaphoreViewController.m */,
