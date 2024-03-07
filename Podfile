@@ -7,6 +7,8 @@ target 'AVDemo' do
   pod 'Debugo'
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1',:dev_env => 'dev'
   pod 'DebugTool', :git => 'https://github.com/dclcs/DebugTool.git', :branch => 'main', :tag => '0.0.1',:dev_env => 'dev'
+#  pod 'CocoaDebug', :configurations => ['Debug']
+
 end
 
 post_install do |installer|
