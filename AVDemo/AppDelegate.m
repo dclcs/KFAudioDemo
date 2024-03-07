@@ -27,7 +27,7 @@
         // 配置 configuration，定制你的需求
     }];
     
-    [DebugTool fireWithConfiguration];
+//    [DebugTool fireWithConfiguration];
     
     return YES;
 }

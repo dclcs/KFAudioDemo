@@ -6,13 +6,15 @@
 //
 
 #import "ViewController.h"
-
+#import "DemosModel.h"
+#import "DemosHelper.h"
 static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) UITableView *myTableView;
-@property (copy, nonatomic) NSArray *demoList;
-@property (copy, nonatomic) NSArray *demoPageNameList;
+
+@property (nonatomic, strong) NSArray<NSArray<DemosModel *> *> *demos;
+@property (nonatomic, strong) NSArray *demoTitle;
 @end
 
 @implementation ViewController
@@ -28,13 +30,23 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
     return _myTableView;
 }
 
+
+- (void)readDemoJSON
+{
+    
+    NSDictionary *dicts = [DemosHelper readLocalFileWithName:@"demo"];
+    self.demoTitle = [DemosHelper parseTitles:dicts];
+    
+    self.demos = [DemosHelper parseModels:dicts withTitles:self.demoTitle];
+    
+}
+
+
 #pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-    self.demoList = @[@"Audio Capture", @"Audio Encoder", @"Audio Muxer", @"Audio Demuxer", @"Audio Decoder", @"Audio Render"];
-    self.demoPageNameList = @[@"KFAudioCaptureViewController", @"KFAudioEncoderViewController", @"KFAudioMuxerViewController",@"KFAudioDemuxerViewController", @"KFAudioDecoderViewController", @"KFAudioRenderViewController"];
-    
+    [self readDemoJSON];
     [self setupUI];
 }
 
@@ -67,7 +79,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self goToDemoPageWithViewControllerName:self.demoPageNameList[indexPath.row]];
+    [self goToDemoPageWithViewControllerName:self.demos[indexPath.section][indexPath.row].target];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -76,15 +88,15 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.demos.count;
 }
 
 - (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Demos";
+    return self.demoTitle[section];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.demoList.count;
+    return ((NSArray *)self.demos[section]).count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -93,7 +105,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:KFMainTableCellIdentifier];
     }
     
-    NSString *demoTitle = self.demoList[indexPath.row];
+    NSString *demoTitle = self.demos[indexPath.section][indexPath.row].title;
     cell.textLabel.text = demoTitle;
     
     return cell;
