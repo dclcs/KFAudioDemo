@@ -1,0 +1,4 @@
+[submodule "developing_pods/KFAVKit"]
+	path = developing_pods/KFAVKit
+	url = https://github.com/dclcs/KFAVKit.git
+	branch = main

@@ -279,6 +279,8 @@
 				6FB306DE2B31C13E008ABA51 /* Frameworks */,
 				6FB306DF2B31C13E008ABA51 /* Resources */,
 				52D93BF3E8178F9DD3BF0E5F /* [CP] Embed Pods Frameworks */,
+				6F5380632B8D8D92007AB611 /* Debugo Build Info */,
+				6FE33EAB2B918513008E8A16 /* DebugTool BuildInfo */,
 			);
 			buildRules = (
 			);
@@ -354,6 +356,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVDemo/Pods-AVDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6F5380632B8D8D92007AB611 /* Debugo Build Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Debugo Build Info";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 直接拖拽引入或者 CocoaPods 没有使用 use_frameworks!\nbuildInfoSh=\"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_FOLDER_PATH}/Debugo.bundle/com.ripperhe.debugo.build.info.sh\"\n# CocoaPods use_frameworks!\nbuildInfoSh2=\"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_FOLDER_PATH}/Frameworks/Debugo.framework/Debugo.bundle/com.ripperhe.debugo.build.info.sh\"\n\nif [ -x \"${buildInfoSh}\" ]; then\n${buildInfoSh}\necho \"com.ripperhe.debugo.build.info.sh path: ${buildInfoSh}\"\nelif [ -x \"${buildInfoSh2}\" ]; then\n${buildInfoSh2}\necho \"com.ripperhe.debugo.build.info.sh path: ${buildInfoSh2}\"\nelse\necho \"com.ripperhe.debugo.build.info.sh not found!!! \"\nfi\n";
+		};
+		6FE33EAB2B918513008E8A16 /* DebugTool BuildInfo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "DebugTool BuildInfo";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# CocoaPods use_frameworks!\n\n\nbuildInfoSh2=\"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_FOLDER_PATH}/Frameworks/DebugTool.framework/com.sh\"\n\nchmod a+x ${buildInfoSh2}\n${buildInfoSh2}\n\n";
 		};
 		ABF16A7FF591C57D7467868D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -557,7 +595,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +628,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
