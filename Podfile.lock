@@ -4,11 +4,13 @@ PODS:
   - Debugo/Core (0.4.0):
     - FMDB (>= 2.7.2)
   - DebugTool (0.1.0):
+    - JXSegmentedView
     - SnapKit
     - Yaml
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - JXSegmentedView (1.3.0)
   - KFAVKit (0.1.0)
   - SnapKit (5.0.1)
   - ToyImageLoader (0.0.3)
@@ -24,6 +26,7 @@ SPEC REPOS:
   trunk:
     - Debugo
     - FMDB
+    - JXSegmentedView
     - SnapKit
     - Yaml
 
@@ -47,8 +50,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Debugo: 7ea74eca356172e17622b6de46a8f2f9e97724ae
-  DebugTool: cc0a01c8d6555af888c88842945599acf90d5603
+  DebugTool: c03a142f7c349aeb74bff4101e04a5e92e8ce961
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
   KFAVKit: f6c89eeef8354ab0d136a116c5468afdb0434556
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   ToyImageLoader: 178c4d8636fd0cd67c3e6b2b0e5a5337a627d15e
