@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - Debugo (0.4.0):
     - Debugo/Core (= 0.4.0)
   - Debugo/Core (0.4.0):
@@ -7,26 +22,45 @@ PODS:
     - JXSegmentedView
     - SnapKit
     - Yaml
+  - DictResult (0.1.0):
+    - AFNetworking (~> 4.0)
+    - ZYSDK
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - JXSegmentedView (1.3.0)
   - KFAVKit (0.1.0)
+  - Masonry (1.1.0)
+  - ReactiveCocoa (12.0.0):
+    - ReactiveSwift (~> 7.0)
+  - ReactiveSwift (7.1.1)
   - SnapKit (5.0.1)
   - ToyImageLoader (0.0.3)
   - Yaml (3.4.4)
+  - YDSimulInterprete (0.1.0):
+    - AFNetworking (~> 4.0)
+    - Masonry
+    - ReactiveCocoa
+  - ZYSDK (0.0.2)
 
 DEPENDENCIES:
   - Debugo
   - DebugTool (from `https://github.com/dclcs/DebugTool.git`, tag `0.0.2_beta`)
+  - DictResult (from `./developing_pods/DictResult`)
   - KFAVKit (from `https://github.com/dclcs/KFAVKit.git`, tag `0.0.1_beta`)
   - ToyImageLoader (from `https://github.com/dclcs/ToyImageLoader.git`, tag `0.0.3_beta`)
+  - YDSimulInterprete (from `./developing_pods/YDSimulInterprete`)
+  - ZYSDK (from `https://github.com/dclcs/ZYSDK.git`, tag `0.0.2_beta`)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - Debugo
     - FMDB
     - JXSegmentedView
+    - Masonry
+    - ReactiveCocoa
+    - ReactiveSwift
     - SnapKit
     - Yaml
 
@@ -34,12 +68,19 @@ EXTERNAL SOURCES:
   DebugTool:
     :git: https://github.com/dclcs/DebugTool.git
     :tag: 0.0.2_beta
+  DictResult:
+    :path: "./developing_pods/DictResult"
   KFAVKit:
     :git: https://github.com/dclcs/KFAVKit.git
     :tag: 0.0.1_beta
   ToyImageLoader:
     :git: https://github.com/dclcs/ToyImageLoader.git
     :tag: 0.0.3_beta
+  YDSimulInterprete:
+    :path: "./developing_pods/YDSimulInterprete"
+  ZYSDK:
+    :git: https://github.com/dclcs/ZYSDK.git
+    :tag: 0.0.2_beta
 
 CHECKOUT OPTIONS:
   DebugTool:
@@ -51,17 +92,27 @@ CHECKOUT OPTIONS:
   ToyImageLoader:
     :git: https://github.com/dclcs/ToyImageLoader.git
     :tag: 0.0.3_beta
+  ZYSDK:
+    :git: https://github.com/dclcs/ZYSDK.git
+    :tag: 0.0.2_beta
 
 SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Debugo: 7ea74eca356172e17622b6de46a8f2f9e97724ae
   DebugTool: b86bedb61bf338d692ed7cd79d04790e7582fea6
+  DictResult: 4d5bdecf40cba791eb7b3d44b1f31ecd4ddcea0f
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
   KFAVKit: f6c89eeef8354ab0d136a116c5468afdb0434556
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
+  ReactiveSwift: 477d3f5bc2eb3cbbba1c1636505752b83bef93b1
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   ToyImageLoader: 178c4d8636fd0cd67c3e6b2b0e5a5337a627d15e
   Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
+  YDSimulInterprete: c8e2a0836f21f453d79e026c11bce4818c7e51c0
+  ZYSDK: f7f8107c41588e1617fb53db584d835c248a6e1d
 
-PODFILE CHECKSUM: 59096374006624e799d53c7051878406229baf36
+PODFILE CHECKSUM: 25fffaa2de1125d78d84098f0f85be2f0378e97f
 
 COCOAPODS: 1.11.3

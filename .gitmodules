@@ -2,3 +2,15 @@
 	path = developing_pods/KFAVKit
 	url = https://github.com/dclcs/KFAVKit.git
 	branch = main
+[submodule "developing_pods/DictResult"]
+	path = developing_pods/DictResult
+	url = https://github.com/dclcs/DictResult.git
+	branch = master
+[submodule "developing_pods/YDDJSONKit"]
+	path = developing_pods/YDDJSONKit
+	url = https://github.com/dclcs/YDDJSONKit.git
+	branch = master
+[submodule "developing_pods/YDSimulInterprete"]
+	path = developing_pods/YDSimulInterprete
+	url = https://github.com/dclcs/YDSimulInterprete.git
+	branch = master

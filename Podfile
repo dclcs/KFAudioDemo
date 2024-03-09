@@ -9,6 +9,10 @@ target 'AVDemo' do
 
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1', :dev_env => 'beta'
   pod 'ToyImageLoader', :git => 'https://github.com/dclcs/ToyImageLoader.git', :branch => 'main', :tag => '0.0.3',:dev_env => 'beta'
+  pod 'DictResult', :git => 'https://github.com/dclcs/DictResult.git', :branch => 'master', :tag => '0.0.1', :dev_env => 'dev'
+  pod 'ZYSDK', :git => 'https://github.com/dclcs/ZYSDK.git', :branch => 'master', :tag => '0.0.2', :dev_env => 'beta'
+  pod 'YDSimulInterprete', :git => 'https://github.com/dclcs/YDSimulInterprete.git', :branch => 'master', :tag => '0.0.2', :dev_env => 'dev'
+
 end
 
 post_install do |installer|
