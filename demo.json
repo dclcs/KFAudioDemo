@@ -79,6 +79,11 @@
             "title": "事件系统",
             "target": "InterviewEventViewController",
             "type" : 2
+        },
+        {
+            "title": "你画我猜",
+            "target": "InterviewDrawEnterViewController",
+            "type" : 2
         }
     ],
     "titles" : ["Audio & Video", "ToyImageLoader", "InterView" ]

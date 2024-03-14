@@ -1,5 +1,5 @@
 platform :ios, '13.0'
-use_frameworks! :linkage => :static
+use_frameworks!
 
 target 'AVDemo' do
   project 'AVDemo'
@@ -10,6 +10,10 @@ target 'AVDemo' do
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1', :dev_env => 'beta'
   pod 'ToyImageLoader', :git => 'https://github.com/dclcs/ToyImageLoader.git', :branch => 'main', :tag => '0.0.3',:dev_env => 'beta'
 #  pod 'DictResult', :git => 'https://github.com/dclcs/DictResult.git', :branch => 'master', :tag => '0.0.1', :dev_env => 'dev'
+
+#  wepie 的你画我猜
+  
+
   pod 'ZYSDK', :git => 'https://github.com/dclcs/ZYSDK.git', :branch => 'master', :tag => '0.0.2', :dev_env => 'dev'
   pod 'YDSimulInterprete', :git => 'https://github.com/dclcs/YDSimulInterprete.git', :branch => 'master', :tag => '0.0.2', :dev_env => 'dev'
   
@@ -39,7 +43,7 @@ target 'AVDemo' do
 #  pod 'XBase', :path => '../XBase'
 #  pod 'Three20Navigator', :path => '../Three20Navigator'
 #  pod 'MBProgressHUDWrapper' , :path => '../MBProgressHUDWrapper'
-  pod 'iFlyMSC', :path => '../iFlyMSC'
+#  pod 'iFlyMSC', :path => '../iFlyMSC'
   pod 'XLabel' , :path => '../XLabel'
 end
 

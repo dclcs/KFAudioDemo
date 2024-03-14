@@ -26,7 +26,6 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - iFlyMSC (0.0.1)
   - JXSegmentedView (1.3.0)
   - KFAVKit (0.1.0)
   - ListViewCellExposureLog (0.1.0)
@@ -63,7 +62,6 @@ PODS:
     - YDASR/YouDao
     - YDASR/ZhiYun
   - YDASR/XunFei (1.5.0):
-    - iFlyMSC
     - YDASR/Core
   - YDASR/YouDao (1.5.0):
     - YDASR/Core
@@ -171,7 +169,6 @@ PODS:
 DEPENDENCIES:
   - Debugo
   - DebugTool (from `https://github.com/dclcs/DebugTool.git`, tag `0.0.2_beta`)
-  - iFlyMSC (from `../iFlyMSC`)
   - KFAVKit (from `https://github.com/dclcs/KFAVKit.git`, tag `0.0.1_beta`)
   - ListViewCellExposureLog (from `../ListViewCellExposureLog/`)
   - NimbusKit-AttributedLabel
@@ -215,8 +212,6 @@ EXTERNAL SOURCES:
   DebugTool:
     :git: https://github.com/dclcs/DebugTool.git
     :tag: 0.0.2_beta
-  iFlyMSC:
-    :path: "../iFlyMSC"
   KFAVKit:
     :git: https://github.com/dclcs/KFAVKit.git
     :tag: 0.0.1_beta
@@ -280,7 +275,6 @@ SPEC CHECKSUMS:
   Debugo: 7ea74eca356172e17622b6de46a8f2f9e97724ae
   DebugTool: b86bedb61bf338d692ed7cd79d04790e7582fea6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  iFlyMSC: 9e91beef075b4fd663ab2607d2cf81af681540a0
   JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
   KFAVKit: f6c89eeef8354ab0d136a116c5468afdb0434556
   ListViewCellExposureLog: dd0d2e2bd8ec14ed91276f6d2a0ed97d48cde8c5
@@ -300,18 +294,18 @@ SPEC CHECKSUMS:
   ToyImageLoader: 178c4d8636fd0cd67c3e6b2b0e5a5337a627d15e
   XLabel: 86f7ed681926f9c34337375bb3de5b507974dc5c
   Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
-  YDASR: 78e7b5fa5b241c127a900b55e2a680c520b1d98a
+  YDASR: d79a373db9774f243b135ad4746f0a1b06b40625
   YDCommon: af813426a12743fff3f54f2e86c3165c6004628c
   YDDFrameExtension: 08042b108f00d433270e4bc8a71e7bc946495112
   YDLanguageEngine: bc4fe22352cb0f580a003182c52bc9cd900b5f0e
   YDSimulInterprete: 1d5e61c7ad3088789979fc8e125b64b272dfca53
   YDTransSimultaneous: be55c981f1fcebaea8632908fba83dde75176277
-  YDVoiceDetection: fc519dffd64cb4aec65025ad9476a7da0dd072df
+  YDVoiceDetection: 62af602236a67f94a1dcd237ff463fdb5ca40c4c
   YYCache: 8c53cc386f33bdeeba9b714614f1e82126419c3b
   YYImage: f6c17efbc437c00826891b6ac1fc81a25fb5d858
   YYWebImage: da93aa17dd34b1c3f050322a58d8b24b9bf58132
   ZYSDK: d4a1d594551c3beccc959f65bc5aa1836278932b
 
-PODFILE CHECKSUM: 87a9672b2b36c19c7b4a45f91df84a6843d9b46b
+PODFILE CHECKSUM: 6fe5682418e639157abb34b11088529f949d320e
 
 COCOAPODS: 1.12.1
