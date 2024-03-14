@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
   - Debugo (0.4.0):
     - Debugo/Core (= 0.4.0)
   - Debugo/Core (0.4.0):
@@ -22,65 +23,242 @@ PODS:
     - JXSegmentedView
     - SnapKit
     - Yaml
-  - DictResult (0.1.0):
-    - AFNetworking (~> 4.0)
-    - ZYSDK
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - iFlyMSC (0.0.1)
   - JXSegmentedView (1.3.0)
   - KFAVKit (0.1.0)
+  - ListViewCellExposureLog (0.1.0)
   - Masonry (1.1.0)
-  - ReactiveCocoa (12.0.0):
-    - ReactiveSwift (~> 7.0)
-  - ReactiveSwift (7.1.1)
-  - SnapKit (5.0.1)
+  - NimbusKit-AttributedLabel (1.0.0)
+  - NIMSDK (0.1.0)
+  - ObjectMapper (4.2.0)
+  - Palette (1.0.6)
+  - ReactiveCocoa (1.0.5):
+    - ReactiveCocoa/core (= 1.0.5)
+    - ReactiveCocoa/no-arc (= 1.0.5)
+  - ReactiveCocoa/core (1.0.5)
+  - ReactiveCocoa/no-arc (1.0.5)
+  - SAMKeychain (1.5.3)
+  - ScreenRecordSocket (0.0.1)
+  - SnapKit (5.6.0)
+  - SSZipArchive (2.4.3)
+  - SwiftyBeaver (1.9.5)
+  - SwiftyJSON (5.0.1)
+  - SwViewCapture (0.1.0)
   - ToyImageLoader (0.0.3)
+  - XLabel (0.0.1):
+    - NimbusKit-AttributedLabel
   - Yaml (3.4.4)
+  - YDASR (1.5.0):
+    - YDASR/Core (= 1.5.0)
+  - YDASR/Core (1.5.0):
+    - AFNetworking
+    - ReactiveCocoa
+    - YDCommon/YDDebug
+  - YDASR/Union (1.5.0):
+    - YDASR/Core
+    - YDASR/XunFei
+    - YDASR/YouDao
+    - YDASR/ZhiYun
+  - YDASR/XunFei (1.5.0):
+    - iFlyMSC
+    - YDASR/Core
+  - YDASR/YouDao (1.5.0):
+    - YDASR/Core
+  - YDASR/ZhiYun (1.5.0):
+    - YDASR/Core
+    - ZYSDK/ASR
+  - YDCommon (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDCommon/Core (= 0.1.0)
+    - YDCommon/DateExtension (= 0.1.0)
+    - YDCommon/FoundationExtension (= 0.1.0)
+    - YDCommon/UI (= 0.1.0)
+    - YDCommon/UIKitExtension (= 0.1.0)
+    - YDCommon/WithUIApplication (= 0.1.0)
+    - YDCommon/YDCache (= 0.1.0)
+    - YDCommon/YDColor (= 0.1.0)
+    - YDCommon/YDDebug (= 0.1.0)
+    - YDCommon/YDNetwork (= 0.1.0)
+    - YDDFrameExtension
+  - YDCommon/Core (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/DateExtension (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/FoundationExtension (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/UI (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/UIKitExtension (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/WithUIApplication (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/YDCache (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/YDColor (0.1.0):
+    - SnapKit
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/YDDebug (0.1.0):
+    - SnapKit
+    - SwiftyBeaver
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDCommon/YDNetwork (0.1.0):
+    - Alamofire (= 4.9.1)
+    - ObjectMapper
+    - SAMKeychain
+    - SnapKit
+    - SwiftyJSON
+    - SwViewCapture
+    - YDDFrameExtension
+  - YDDFrameExtension (0.1.0)
+  - YDLanguageEngine (0.1.0):
+    - YDCommon
   - YDSimulInterprete (0.1.0):
     - AFNetworking (~> 4.0)
     - Masonry
+    - NIMSDK
     - ReactiveCocoa
-  - ZYSDK (0.0.2)
+    - SwiftyJSON
+    - YDCommon
+  - YDTransSimultaneous (0.1.0):
+    - Masonry
+    - SSZipArchive
+    - XLabel
+    - YDASR/Union
+    - YDLanguageEngine
+    - YDSimulInterprete
+    - YDVoiceDetection
+    - ZYSDK/ASR
+  - YDVoiceDetection (1.1.5)
+  - YYCache (1.0.5)
+  - YYImage (1.0.5):
+    - YYImage/Core (= 1.0.5)
+  - YYImage/Core (1.0.5)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - ZYSDK (0.0.1):
+    - ZYSDK/ASR (= 0.0.1)
+    - ZYSDK/SpeechEvalution (= 0.0.1)
+  - ZYSDK/ASR (0.0.1):
+    - ScreenRecordSocket
+    - ZYSDK/BaseSourceCode
+  - ZYSDK/BaseSourceCode (0.0.1):
+    - ZYSDK/no-arc
+  - ZYSDK/no-arc (0.0.1)
+  - ZYSDK/SpeechEvalution (0.0.1):
+    - ZYSDK/BaseSourceCode
 
 DEPENDENCIES:
   - Debugo
   - DebugTool (from `https://github.com/dclcs/DebugTool.git`, tag `0.0.2_beta`)
-  - DictResult (from `./developing_pods/DictResult`)
+  - iFlyMSC (from `../iFlyMSC`)
   - KFAVKit (from `https://github.com/dclcs/KFAVKit.git`, tag `0.0.1_beta`)
+  - ListViewCellExposureLog (from `../ListViewCellExposureLog/`)
+  - NimbusKit-AttributedLabel
+  - NIMSDK (from `../NIMSDK`)
+  - Palette (from `https://github.com/galandezzz/ios-Palette.git`)
+  - ReactiveCocoa (from `../ReactiveCocoa/`)
+  - ScreenRecordSocket (from `../ScreenRecordSocket`)
+  - SwViewCapture (from `../SwViewCapture/`)
   - ToyImageLoader (from `https://github.com/dclcs/ToyImageLoader.git`, tag `0.0.3_beta`)
+  - XLabel (from `../XLabel`)
+  - YDASR (from `../YDASR`)
+  - YDCommon (from `../YDCommon/`)
+  - YDDFrameExtension (from `../YDDFrameExtension/`)
+  - YDLanguageEngine (from `../YDLanguageEngine`)
   - YDSimulInterprete (from `./developing_pods/YDSimulInterprete`)
-  - ZYSDK (from `https://github.com/dclcs/ZYSDK.git`, tag `0.0.2_beta`)
+  - YDTransSimultaneous (from `../YDTransSimultaneous/`)
+  - YDVoiceDetection (from `../YDVoiceDetection`)
+  - YYCache (from `../YYCache/`)
+  - YYImage (from `../YYImage/`)
+  - YYWebImage (from `../YYWebImage/`)
+  - ZYSDK (from `./developing_pods/ZYSDK`)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Alamofire
     - Debugo
     - FMDB
     - JXSegmentedView
     - Masonry
-    - ReactiveCocoa
-    - ReactiveSwift
+    - NimbusKit-AttributedLabel
+    - ObjectMapper
+    - SAMKeychain
     - SnapKit
+    - SSZipArchive
+    - SwiftyBeaver
+    - SwiftyJSON
     - Yaml
 
 EXTERNAL SOURCES:
   DebugTool:
     :git: https://github.com/dclcs/DebugTool.git
     :tag: 0.0.2_beta
-  DictResult:
-    :path: "./developing_pods/DictResult"
+  iFlyMSC:
+    :path: "../iFlyMSC"
   KFAVKit:
     :git: https://github.com/dclcs/KFAVKit.git
     :tag: 0.0.1_beta
+  ListViewCellExposureLog:
+    :path: "../ListViewCellExposureLog/"
+  NIMSDK:
+    :path: "../NIMSDK"
+  Palette:
+    :git: https://github.com/galandezzz/ios-Palette.git
+  ReactiveCocoa:
+    :path: "../ReactiveCocoa/"
+  ScreenRecordSocket:
+    :path: "../ScreenRecordSocket"
+  SwViewCapture:
+    :path: "../SwViewCapture/"
   ToyImageLoader:
     :git: https://github.com/dclcs/ToyImageLoader.git
     :tag: 0.0.3_beta
+  XLabel:
+    :path: "../XLabel"
+  YDASR:
+    :path: "../YDASR"
+  YDCommon:
+    :path: "../YDCommon/"
+  YDDFrameExtension:
+    :path: "../YDDFrameExtension/"
+  YDLanguageEngine:
+    :path: "../YDLanguageEngine"
   YDSimulInterprete:
     :path: "./developing_pods/YDSimulInterprete"
+  YDTransSimultaneous:
+    :path: "../YDTransSimultaneous/"
+  YDVoiceDetection:
+    :path: "../YDVoiceDetection"
+  YYCache:
+    :path: "../YYCache/"
+  YYImage:
+    :path: "../YYImage/"
+  YYWebImage:
+    :path: "../YYWebImage/"
   ZYSDK:
-    :git: https://github.com/dclcs/ZYSDK.git
-    :tag: 0.0.2_beta
+    :path: "./developing_pods/ZYSDK"
 
 CHECKOUT OPTIONS:
   DebugTool:
@@ -89,30 +267,51 @@ CHECKOUT OPTIONS:
   KFAVKit:
     :git: https://github.com/dclcs/KFAVKit.git
     :tag: 0.0.1_beta
+  Palette:
+    :commit: 9b5b2831367fb32fac0ec97551724f77978a7e85
+    :git: https://github.com/galandezzz/ios-Palette.git
   ToyImageLoader:
     :git: https://github.com/dclcs/ToyImageLoader.git
     :tag: 0.0.3_beta
-  ZYSDK:
-    :git: https://github.com/dclcs/ZYSDK.git
-    :tag: 0.0.2_beta
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Debugo: 7ea74eca356172e17622b6de46a8f2f9e97724ae
   DebugTool: b86bedb61bf338d692ed7cd79d04790e7582fea6
-  DictResult: 4d5bdecf40cba791eb7b3d44b1f31ecd4ddcea0f
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  iFlyMSC: 9e91beef075b4fd663ab2607d2cf81af681540a0
   JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
   KFAVKit: f6c89eeef8354ab0d136a116c5468afdb0434556
+  ListViewCellExposureLog: dd0d2e2bd8ec14ed91276f6d2a0ed97d48cde8c5
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
-  ReactiveSwift: 477d3f5bc2eb3cbbba1c1636505752b83bef93b1
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  NimbusKit-AttributedLabel: b07b1f99ba46801a1c0d32c43a3a044fdda46c15
+  NIMSDK: adc528eb78eb588093acf0252e2d7fc034888114
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Palette: aa21bf41603ef85b1d735ae7e17f7685aa21f192
+  ReactiveCocoa: a90eef2358d04ea571930c21a7377903ecd84529
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  ScreenRecordSocket: 3c7b06d97726acf6c0cfa1dbfdd71c671f1ab1df
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwViewCapture: a4a272fe1609bcf785b71588c99e2efcae111a0b
   ToyImageLoader: 178c4d8636fd0cd67c3e6b2b0e5a5337a627d15e
+  XLabel: 86f7ed681926f9c34337375bb3de5b507974dc5c
   Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
-  YDSimulInterprete: c8e2a0836f21f453d79e026c11bce4818c7e51c0
-  ZYSDK: f7f8107c41588e1617fb53db584d835c248a6e1d
+  YDASR: 78e7b5fa5b241c127a900b55e2a680c520b1d98a
+  YDCommon: af813426a12743fff3f54f2e86c3165c6004628c
+  YDDFrameExtension: 08042b108f00d433270e4bc8a71e7bc946495112
+  YDLanguageEngine: bc4fe22352cb0f580a003182c52bc9cd900b5f0e
+  YDSimulInterprete: 1d5e61c7ad3088789979fc8e125b64b272dfca53
+  YDTransSimultaneous: be55c981f1fcebaea8632908fba83dde75176277
+  YDVoiceDetection: fc519dffd64cb4aec65025ad9476a7da0dd072df
+  YYCache: 8c53cc386f33bdeeba9b714614f1e82126419c3b
+  YYImage: f6c17efbc437c00826891b6ac1fc81a25fb5d858
+  YYWebImage: da93aa17dd34b1c3f050322a58d8b24b9bf58132
+  ZYSDK: d4a1d594551c3beccc959f65bc5aa1836278932b
 
-PODFILE CHECKSUM: 25fffaa2de1125d78d84098f0f85be2f0378e97f
+PODFILE CHECKSUM: 87a9672b2b36c19c7b4a45f91df84a6843d9b46b
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

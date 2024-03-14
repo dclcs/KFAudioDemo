@@ -14,3 +14,15 @@
 	path = developing_pods/YDSimulInterprete
 	url = https://github.com/dclcs/YDSimulInterprete.git
 	branch = master
+[submodule "developing_pods/YDSDUI"]
+	path = developing_pods/YDSDUI
+	url = https://github.com/dclcs/YDSDUI.git
+	branch = main
+[submodule "developing_pods/YDCollectionKit"]
+	path = developing_pods/YDCollectionKit
+	url = https://github.com/dclcs/YDCollectionKit.git
+	branch = main
+[submodule "developing_pods/ZYSDK"]
+	path = developing_pods/ZYSDK
+	url = https://github.com/dclcs/ZYSDK.git
+	branch = master

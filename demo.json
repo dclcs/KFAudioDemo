@@ -74,6 +74,11 @@
             "title": "Runloop Block Mgr",
             "target": "InterviewBlockMgrViewController",
             "type" : 2
+        },
+        {
+            "title": "事件系统",
+            "target": "InterviewEventViewController",
+            "type" : 2
         }
     ],
     "titles" : ["Audio & Video", "ToyImageLoader", "InterView" ]
