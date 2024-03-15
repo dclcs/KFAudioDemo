@@ -11,6 +11,9 @@
 		4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6342B3295BB00274DB8 /* KFAudioEncoderViewController.m */; };
 		4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D63D2B34302E00274DB8 /* KFAudioDecoderViewController.m */; };
 		4009D6492B34B31B00274DB8 /* KFAudioRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4009D6482B34B31B00274DB8 /* KFAudioRenderViewController.m */; };
+		4025C4652BA3D6D80086A26B /* WPDrawTraceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4025C4642BA3D6D80086A26B /* WPDrawTraceInfo.m */; };
+		4025C4692BA3D7660086A26B /* WPDrawPointInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4025C4682BA3D7660086A26B /* WPDrawPointInfo.m */; };
+		4025C46D2BA3D9860086A26B /* WPDrawInfoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4025C46C2BA3D9860086A26B /* WPDrawInfoCenter.m */; };
 		409BE7682BA2FBEE0044D76A /* InterviewDrawEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE7672BA2FBEE0044D76A /* InterviewDrawEnterViewController.m */; };
 		409BE76C2BA2FC190044D76A /* WPDrawRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE76B2BA2FC190044D76A /* WPDrawRenderView.m */; };
 		409BE76F2BA2FDA00044D76A /* WPDrawCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE76E2BA2FDA00044D76A /* WPDrawCanvasView.m */; };
@@ -49,6 +52,13 @@
 		4009D63D2B34302E00274DB8 /* KFAudioDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioDecoderViewController.m; sourceTree = "<group>"; };
 		4009D6472B34B31B00274DB8 /* KFAudioRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAudioRenderViewController.h; sourceTree = "<group>"; };
 		4009D6482B34B31B00274DB8 /* KFAudioRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAudioRenderViewController.m; sourceTree = "<group>"; };
+		4025C4632BA3D6D80086A26B /* WPDrawTraceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrawTraceInfo.h; sourceTree = "<group>"; };
+		4025C4642BA3D6D80086A26B /* WPDrawTraceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDrawTraceInfo.m; sourceTree = "<group>"; };
+		4025C4662BA3D7410086A26B /* WPDrawDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrawDefines.h; sourceTree = "<group>"; };
+		4025C4672BA3D7660086A26B /* WPDrawPointInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrawPointInfo.h; sourceTree = "<group>"; };
+		4025C4682BA3D7660086A26B /* WPDrawPointInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDrawPointInfo.m; sourceTree = "<group>"; };
+		4025C46B2BA3D9860086A26B /* WPDrawInfoCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrawInfoCenter.h; sourceTree = "<group>"; };
+		4025C46C2BA3D9860086A26B /* WPDrawInfoCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDrawInfoCenter.m; sourceTree = "<group>"; };
 		409BE7662BA2FBEE0044D76A /* InterviewDrawEnterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewDrawEnterViewController.h; sourceTree = "<group>"; };
 		409BE7672BA2FBEE0044D76A /* InterviewDrawEnterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewDrawEnterViewController.m; sourceTree = "<group>"; };
 		409BE76A2BA2FC190044D76A /* WPDrawRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrawRenderView.h; sourceTree = "<group>"; };
@@ -131,9 +141,24 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		4025C46A2BA3D8800086A26B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4025C4632BA3D6D80086A26B /* WPDrawTraceInfo.h */,
+				4025C4642BA3D6D80086A26B /* WPDrawTraceInfo.m */,
+				4025C4662BA3D7410086A26B /* WPDrawDefines.h */,
+				4025C4672BA3D7660086A26B /* WPDrawPointInfo.h */,
+				4025C4682BA3D7660086A26B /* WPDrawPointInfo.m */,
+				4025C46B2BA3D9860086A26B /* WPDrawInfoCenter.h */,
+				4025C46C2BA3D9860086A26B /* WPDrawInfoCenter.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		409BE7692BA2FC090044D76A /* Draw */ = {
 			isa = PBXGroup;
 			children = (
+				4025C46A2BA3D8800086A26B /* model */,
 				409BE76A2BA2FC190044D76A /* WPDrawRenderView.h */,
 				409BE76B2BA2FC190044D76A /* WPDrawRenderView.m */,
 				409BE76D2BA2FDA00044D76A /* WPDrawCanvasView.h */,
@@ -449,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4025C4692BA3D7660086A26B /* WPDrawPointInfo.m in Sources */,
 				6F0E7A532B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m in Sources */,
 				6F29CB4A2B7DC5420030C4E6 /* InterviewRWLockViewController.m in Sources */,
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
@@ -459,6 +485,7 @@
 				6F0E7A5A2B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
 				6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */,
+				4025C4652BA3D6D80086A26B /* WPDrawTraceInfo.m in Sources */,
 				6F29CB4F2B7E1A9B0030C4E6 /* DemosHelper.m in Sources */,
 				6F9A091C2B7D00F900CE906D /* DemosModel.m in Sources */,
 				409BE76F2BA2FDA00044D76A /* WPDrawCanvasView.m in Sources */,
@@ -474,6 +501,7 @@
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
 				6FF1A1D42B8040360084B428 /* BlockMonitorMgr.m in Sources */,
 				6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */,
+				4025C46D2BA3D9860086A26B /* WPDrawInfoCenter.m in Sources */,
 				409BE7682BA2FBEE0044D76A /* InterviewDrawEnterViewController.m in Sources */,
 				409BE76C2BA2FC190044D76A /* WPDrawRenderView.m in Sources */,
 			);

@@ -6,14 +6,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "WPDrawTraceInfo.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WPDrawRenderView : UIView
 
-- (void)drawWithInfo;
+@property (nonatomic, weak) UIImageView *composeImageView;
 
-- (void)drawWithInfo:(CGFloat)duration;
+- (void)drawWithInfo:(WPDrawTraceInfo *)traceInfo;
+
+- (void)drawWithInfo:(WPDrawTraceInfo *)traceInfo animateDuration:(CGFloat)duration;
 
 
 @end

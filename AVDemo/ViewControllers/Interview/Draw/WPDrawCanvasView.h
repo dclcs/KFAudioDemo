@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WPDrawTraceInfo.h"
+#import "WPDrawInfoCenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WPDrawCanvasView : UIView
+
 
 @end
 
