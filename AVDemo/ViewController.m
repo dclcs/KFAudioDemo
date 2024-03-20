@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "DemosModel.h"
 #import "DemosHelper.h"
+#import "YDWebSocket.h"
 static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -15,6 +16,7 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 
 @property (nonatomic, strong) NSArray<NSArray<DemosModel *> *> *demos;
 @property (nonatomic, strong) NSArray *demoTitle;
+@property (nonatomic, strong) SRWebSocket *websocket;
 @end
 
 @implementation ViewController
@@ -48,6 +50,17 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
     self.view.backgroundColor = UIColor.whiteColor;
     [self readDemoJSON];
     [self setupUI];
+    self.websocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@"ws://192.168.5.16:3030"]];
+
+    [self.websocket open];
+}
+
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
 }
 
 #pragma mark - Setup

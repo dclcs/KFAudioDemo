@@ -5,7 +5,7 @@ target 'AVDemo' do
   project 'AVDemo'
   supports_swift_versions '>= 5.0'
   pod 'Debugo'
-  pod 'DebugTool', :git => 'https://github.com/dclcs/DebugTool.git', :branch => 'main', :tag => '0.0.2',:dev_env => 'beta'
+  pod 'DebugTool', :git => 'https://github.com/dclcs/DebugTool.git', :branch => 'main', :tag => '0.0.3',:dev_env => 'dev'
 
   pod 'KFAVKit', :git => 'https://github.com/dclcs/KFAVKit.git', :branch => 'main', :tag => '0.0.1', :dev_env => 'beta'
   pod 'ToyImageLoader', :git => 'https://github.com/dclcs/ToyImageLoader.git', :branch => 'main', :tag => '0.0.3',:dev_env => 'beta'
@@ -56,24 +56,3 @@ post_install do |installer|
         end
     end
 end
-
-#pre_install do |installer|
-#  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
-#  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
-#end
-
-
-#post_install do |installer|
-#  installer.pods_project.targets.each do |target|
-#    target.build_configurations.each do |config|
-#
-#      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
-#      #      target.build_settings(config.name)['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
-#      config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
-#
-#      #Require Only AppExtension-Safe
-#      config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
-##      fix_config(config)
-#    end
-#  end
-#end

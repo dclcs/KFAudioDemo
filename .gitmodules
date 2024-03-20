@@ -26,3 +26,7 @@
 	path = developing_pods/ZYSDK
 	url = https://github.com/dclcs/ZYSDK.git
 	branch = master
+[submodule "developing_pods/DebugTool"]
+	path = developing_pods/DebugTool
+	url = https://github.com/dclcs/DebugTool.git
+	branch = main

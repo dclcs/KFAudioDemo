@@ -17,6 +17,8 @@
 		409BE7682BA2FBEE0044D76A /* InterviewDrawEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE7672BA2FBEE0044D76A /* InterviewDrawEnterViewController.m */; };
 		409BE76C2BA2FC190044D76A /* WPDrawRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE76B2BA2FC190044D76A /* WPDrawRenderView.m */; };
 		409BE76F2BA2FDA00044D76A /* WPDrawCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BE76E2BA2FDA00044D76A /* WPDrawCanvasView.m */; };
+		40D440A02BA52CBE0059C8FE /* DCLWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D4409F2BA52CBE0059C8FE /* DCLWebSocket.m */; };
+		40D440A32BA5490E0059C8FE /* DCLIOConsumePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D440A22BA5490E0059C8FE /* DCLIOConsumePool.m */; };
 		40F750EF2B9E911700660388 /* InterviewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F750EE2B9E911700660388 /* InterviewEventViewController.m */; };
 		6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F00089A2B32B0CD00DC776A /* KFAudioMuxerViewController.m */; };
 		6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0008A52B3311EE00DC776A /* KFAudioDemuxerViewController.m */; };
@@ -65,6 +67,10 @@
 		409BE76B2BA2FC190044D76A /* WPDrawRenderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDrawRenderView.m; sourceTree = "<group>"; };
 		409BE76D2BA2FDA00044D76A /* WPDrawCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrawCanvasView.h; sourceTree = "<group>"; };
 		409BE76E2BA2FDA00044D76A /* WPDrawCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDrawCanvasView.m; sourceTree = "<group>"; };
+		40D4409E2BA52CBE0059C8FE /* DCLWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLWebSocket.h; sourceTree = "<group>"; };
+		40D4409F2BA52CBE0059C8FE /* DCLWebSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLWebSocket.m; sourceTree = "<group>"; };
+		40D440A12BA5490E0059C8FE /* DCLIOConsumePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCLIOConsumePool.h; sourceTree = "<group>"; };
+		40D440A22BA5490E0059C8FE /* DCLIOConsumePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLIOConsumePool.m; sourceTree = "<group>"; };
 		40F750ED2B9E911700660388 /* InterviewEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewEventViewController.h; sourceTree = "<group>"; };
 		40F750EE2B9E911700660388 /* InterviewEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewEventViewController.m; sourceTree = "<group>"; };
 		514D41A8A2BE38B19F1F79D7 /* Pods-AVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVDemo.release.xcconfig"; path = "Target Support Files/Pods-AVDemo/Pods-AVDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 		4009D6322B32959F00274DB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				40D4409B2BA52C720059C8FE /* websocket */,
 				6F29CB3D2B7DB1750030C4E6 /* ImageLoader */,
 				6F29CB3C2B7DB1630030C4E6 /* Audio&Video */,
 				6F9A09132B7CE37A00CE906D /* Interview */,
@@ -165,6 +172,17 @@
 				409BE76E2BA2FDA00044D76A /* WPDrawCanvasView.m */,
 			);
 			path = Draw;
+			sourceTree = "<group>";
+		};
+		40D4409B2BA52C720059C8FE /* websocket */ = {
+			isa = PBXGroup;
+			children = (
+				40D4409E2BA52CBE0059C8FE /* DCLWebSocket.h */,
+				40D4409F2BA52CBE0059C8FE /* DCLWebSocket.m */,
+				40D440A12BA5490E0059C8FE /* DCLIOConsumePool.h */,
+				40D440A22BA5490E0059C8FE /* DCLIOConsumePool.m */,
+			);
+			path = websocket;
 			sourceTree = "<group>";
 		};
 		6F0E7A572B7F8D3A0096B4D2 /* SafeArray */ = {
@@ -486,12 +504,14 @@
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
 				6F649FE22B418F720078E21A /* TestImageLoaderViewController.m in Sources */,
 				4025C4652BA3D6D80086A26B /* WPDrawTraceInfo.m in Sources */,
+				40D440A32BA5490E0059C8FE /* DCLIOConsumePool.m in Sources */,
 				6F29CB4F2B7E1A9B0030C4E6 /* DemosHelper.m in Sources */,
 				6F9A091C2B7D00F900CE906D /* DemosModel.m in Sources */,
 				409BE76F2BA2FDA00044D76A /* WPDrawCanvasView.m in Sources */,
 				6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */,
 				6FF1A1D02B803FD00084B428 /* InterviewBlockMgrViewController.m in Sources */,
 				6F29CB442B7DB3150030C4E6 /* InterOperation.m in Sources */,
+				40D440A02BA52CBE0059C8FE /* DCLWebSocket.m in Sources */,
 				40F750EF2B9E911700660388 /* InterviewEventViewController.m in Sources */,
 				6F9A09122B7CE05E00CE906D /* InterviewGCDViewController.m in Sources */,
 				4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */,
