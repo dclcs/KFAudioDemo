@@ -76,15 +76,49 @@
             "type" : 2
         },
         {
+            "title" : "关联对象",
+            "target": "InterViewAssociatedViewController",
+            "type": 2
+        },
+        {
+            "title" : "离屏渲染",
+            "target": "InterViewOffScreenRenderViewController",
+            "type": 2
+        },
+        {
+            "title" : "用NSProxy来解决循环引用",
+            "target": "InterViewNSProxyWeakViewController",
+            "type": 2
+        },
+        
+        {
+            "title" : "UIButton 避免重复点击",
+            "target": "InterViewUIButtonClickMultiViewController",
+            "type": 2
+        },
+        
+        {
+            "title" : "安全的数组、数组越界",
+            "target": "InterViewSafeArrayViewController",
+            "type": 2
+        },
+        
+        {
+            "title" : "ScrollView 滑动定时器失效",
+            "target": "InterViewScrollRunloopViewController",
+            "type": 2
+        },
+        {
+            "title" : "线程保活",
+            "target": "InterViewActiveThreadViewController",
+            "type": 2
+        },
+        {
             "title" : "HTTP MOCK",
             "target": "HTTPViewController",
             "type": 3
         },
-        {
-            "title" : "关联对象",
-            "target": "InterViewAssociatedViewController",
-            "type": 3
-        }
+        
     ],
     "titles" : ["Audio & Video", "ToyImageLoader", "InterView", "HTTP" ]
 }

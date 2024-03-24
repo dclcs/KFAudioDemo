@@ -41,6 +41,13 @@
 		6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */; };
 		6FF1A1D02B803FD00084B428 /* InterviewBlockMgrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */; };
 		6FF1A1D42B8040360084B428 /* BlockMonitorMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1A1D32B8040360084B428 /* BlockMonitorMgr.m */; };
+		6FFF34A12BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A02BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m */; };
+		6FFF34A42BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A32BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m */; };
+		6FFF34A72BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A62BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m */; };
+		6FFF34AA2BAFE0B60012EBDC /* InterViewSafeArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A92BAFE0B60012EBDC /* InterViewSafeArrayViewController.m */; };
+		6FFF34B62BAFE7A10012EBDC /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFF34AF2BAFE65E0012EBDC /* AppsFlyerLib.framework */; };
+		6FFF34BB2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34BA2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m */; };
+		6FFF34BE2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34BD2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +115,20 @@
 		6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewBlockMgrViewController.m; sourceTree = "<group>"; };
 		6FF1A1D22B8040360084B428 /* BlockMonitorMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockMonitorMgr.h; sourceTree = "<group>"; };
 		6FF1A1D32B8040360084B428 /* BlockMonitorMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockMonitorMgr.m; sourceTree = "<group>"; };
+		6FFF349F2BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewOffScreenRenderViewController.h; sourceTree = "<group>"; };
+		6FFF34A02BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewOffScreenRenderViewController.m; sourceTree = "<group>"; };
+		6FFF34A22BAFCE170012EBDC /* InterViewNSProxyWeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewNSProxyWeakViewController.h; sourceTree = "<group>"; };
+		6FFF34A32BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewNSProxyWeakViewController.m; sourceTree = "<group>"; };
+		6FFF34A52BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewUIButtonClickMultiViewController.h; sourceTree = "<group>"; };
+		6FFF34A62BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewUIButtonClickMultiViewController.m; sourceTree = "<group>"; };
+		6FFF34A82BAFE0B60012EBDC /* InterViewSafeArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewSafeArrayViewController.h; sourceTree = "<group>"; };
+		6FFF34A92BAFE0B60012EBDC /* InterViewSafeArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewSafeArrayViewController.m; sourceTree = "<group>"; };
+		6FFF34AB2BAFE4AA0012EBDC /* Cronet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cronet.framework; sourceTree = "<group>"; };
+		6FFF34AF2BAFE65E0012EBDC /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppsFlyerLib.framework; sourceTree = "<group>"; };
+		6FFF34B92BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewScrollRunloopViewController.h; sourceTree = "<group>"; };
+		6FFF34BA2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewScrollRunloopViewController.m; sourceTree = "<group>"; };
+		6FFF34BC2BAFED9E0012EBDC /* InterViewActiveThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewActiveThreadViewController.h; sourceTree = "<group>"; };
+		6FFF34BD2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewActiveThreadViewController.m; sourceTree = "<group>"; };
 		EBC72D17BF6FA23DE480869D /* Pods-AVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVDemo/Pods-AVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EFCD9BCF754732D11B7BB920 /* Pods_AVDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF13E92503DE85EF953E5DC /* Pods_AVDemo.framework in Frameworks */,
+				6FFF34B62BAFE7A10012EBDC /* AppsFlyerLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +153,8 @@
 				6F29CB3D2B7DB1750030C4E6 /* ImageLoader */,
 				6F29CB3C2B7DB1630030C4E6 /* Audio&Video */,
 				6F9A09132B7CE37A00CE906D /* Interview */,
+				6FFF34A82BAFE0B60012EBDC /* InterViewSafeArrayViewController.h */,
+				6FFF34A92BAFE0B60012EBDC /* InterViewSafeArrayViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +243,16 @@
 				6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */,
 				6F176A002BAD39D50059F2D9 /* InterViewAssociatedViewController.h */,
 				6F176A012BAD39D50059F2D9 /* InterViewAssociatedViewController.m */,
+				6FFF349F2BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.h */,
+				6FFF34A02BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m */,
+				6FFF34A22BAFCE170012EBDC /* InterViewNSProxyWeakViewController.h */,
+				6FFF34A32BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m */,
+				6FFF34A52BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.h */,
+				6FFF34A62BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m */,
+				6FFF34B92BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.h */,
+				6FFF34BA2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m */,
+				6FFF34BC2BAFED9E0012EBDC /* InterViewActiveThreadViewController.h */,
+				6FFF34BD2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -294,6 +328,8 @@
 		DE5486E6CA0FEE89D35EBF6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FFF34AF2BAFE65E0012EBDC /* AppsFlyerLib.framework */,
+				6FFF34AB2BAFE4AA0012EBDC /* Cronet.framework */,
 				EFCD9BCF754732D11B7BB920 /* Pods_AVDemo.framework */,
 			);
 			name = Frameworks;
@@ -467,6 +503,7 @@
 				6F29CB4A2B7DC5420030C4E6 /* InterviewRWLockViewController.m in Sources */,
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
 				6F176A022BAD39D50059F2D9 /* InterViewAssociatedViewController.m in Sources */,
+				6FFF34A12BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m in Sources */,
 				6F9A09162B7CE63300CE906D /* InterviewSemaphoreViewController.m in Sources */,
 				6F29CB402B7DB2DC0030C4E6 /* InterviewOperationViewController.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
@@ -480,17 +517,22 @@
 				6F9A091C2B7D00F900CE906D /* DemosModel.m in Sources */,
 				6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */,
 				6FF1A1D02B803FD00084B428 /* InterviewBlockMgrViewController.m in Sources */,
+				6FFF34A42BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m in Sources */,
+				6FFF34AA2BAFE0B60012EBDC /* InterViewSafeArrayViewController.m in Sources */,
 				6F29CB442B7DB3150030C4E6 /* InterOperation.m in Sources */,
 				6F9A09122B7CE05E00CE906D /* InterviewGCDViewController.m in Sources */,
 				4009D63E2B34302E00274DB8 /* KFAudioDecoderViewController.m in Sources */,
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
+				6FFF34BE2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m in Sources */,
 				6F0E7A562B7EFB560096B4D2 /* InterviewCOWViewController.m in Sources */,
 				4009D6492B34B31B00274DB8 /* KFAudioRenderViewController.m in Sources */,
 				6F176A0C2BAD438E0059F2D9 /* WeakObjWrapper.m in Sources */,
+				6FFF34BB2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m in Sources */,
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
 				6FF1A1D42B8040360084B428 /* BlockMonitorMgr.m in Sources */,
 				6F176A062BAD3A030059F2D9 /* InAssociatedModel.m in Sources */,
 				6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */,
+				6FFF34A72BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +677,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8YXDL9F;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AVDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -668,6 +714,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U4M8YXDL9F;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AVDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
