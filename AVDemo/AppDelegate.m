@@ -29,6 +29,7 @@
     
     [DebugTool fireWithConfiguration];
     
+    
     return YES;
 }
 

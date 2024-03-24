@@ -17,6 +17,10 @@
 		6F0E7A532B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E7A522B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m */; };
 		6F0E7A562B7EFB560096B4D2 /* InterviewCOWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E7A552B7EFB560096B4D2 /* InterviewCOWViewController.m */; };
 		6F0E7A5A2B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E7A592B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m */; };
+		6F176A022BAD39D50059F2D9 /* InterViewAssociatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F176A012BAD39D50059F2D9 /* InterViewAssociatedViewController.m */; };
+		6F176A062BAD3A030059F2D9 /* InAssociatedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F176A052BAD3A030059F2D9 /* InAssociatedModel.m */; };
+		6F176A092BAD3A920059F2D9 /* InAssociatedModel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F176A082BAD3A920059F2D9 /* InAssociatedModel+Test.m */; };
+		6F176A0C2BAD438E0059F2D9 /* WeakObjWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F176A0B2BAD438E0059F2D9 /* WeakObjWrapper.m */; };
 		6F29CB402B7DB2DC0030C4E6 /* InterviewOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F29CB3F2B7DB2DC0030C4E6 /* InterviewOperationViewController.m */; };
 		6F29CB442B7DB3150030C4E6 /* InterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F29CB432B7DB3150030C4E6 /* InterOperation.m */; };
 		6F29CB472B7DBF840030C4E6 /* InterviewResidentThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F29CB462B7DBF840030C4E6 /* InterviewResidentThreadViewController.m */; };
@@ -28,6 +32,7 @@
 		6F9A09162B7CE63300CE906D /* InterviewSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A09152B7CE63300CE906D /* InterviewSemaphoreViewController.m */; };
 		6F9A09182B7CFF9700CE906D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F9A09172B7CFF9700CE906D /* README.md */; };
 		6F9A091C2B7D00F900CE906D /* DemosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A091B2B7D00F900CE906D /* DemosModel.m */; };
+		6F9D34402B9FEB360044E81E /* HTTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9D343F2B9FEB360044E81E /* HTTPViewController.m */; };
 		6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306E52B31C13E008ABA51 /* AppDelegate.m */; };
 		6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB306EB2B31C13E008ABA51 /* ViewController.m */; };
 		6FB306F12B31C13F008ABA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB306F02B31C13F008ABA51 /* Assets.xcassets */; };
@@ -57,6 +62,14 @@
 		6F0E7A552B7EFB560096B4D2 /* InterviewCOWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewCOWViewController.m; sourceTree = "<group>"; };
 		6F0E7A582B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutaleArray+SafeOp.h"; sourceTree = "<group>"; };
 		6F0E7A592B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutaleArray+SafeOp.m"; sourceTree = "<group>"; };
+		6F176A002BAD39D50059F2D9 /* InterViewAssociatedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewAssociatedViewController.h; sourceTree = "<group>"; };
+		6F176A012BAD39D50059F2D9 /* InterViewAssociatedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewAssociatedViewController.m; sourceTree = "<group>"; };
+		6F176A042BAD3A030059F2D9 /* InAssociatedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAssociatedModel.h; sourceTree = "<group>"; };
+		6F176A052BAD3A030059F2D9 /* InAssociatedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAssociatedModel.m; sourceTree = "<group>"; };
+		6F176A072BAD3A920059F2D9 /* InAssociatedModel+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InAssociatedModel+Test.h"; sourceTree = "<group>"; };
+		6F176A082BAD3A920059F2D9 /* InAssociatedModel+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "InAssociatedModel+Test.m"; sourceTree = "<group>"; };
+		6F176A0A2BAD438E0059F2D9 /* WeakObjWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakObjWrapper.h; sourceTree = "<group>"; };
+		6F176A0B2BAD438E0059F2D9 /* WeakObjWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakObjWrapper.m; sourceTree = "<group>"; };
 		6F268E802B350C3000ECC7AE /* AVDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F29CB3E2B7DB2DC0030C4E6 /* InterviewOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewOperationViewController.h; sourceTree = "<group>"; };
 		6F29CB3F2B7DB2DC0030C4E6 /* InterviewOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewOperationViewController.m; sourceTree = "<group>"; };
@@ -78,6 +91,8 @@
 		6F9A09172B7CFF9700CE906D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6F9A091A2B7D00F900CE906D /* DemosModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemosModel.h; sourceTree = "<group>"; };
 		6F9A091B2B7D00F900CE906D /* DemosModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemosModel.m; sourceTree = "<group>"; };
+		6F9D343E2B9FEB360044E81E /* HTTPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPViewController.h; sourceTree = "<group>"; };
+		6F9D343F2B9FEB360044E81E /* HTTPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPViewController.m; sourceTree = "<group>"; };
 		6FB306E12B31C13E008ABA51 /* AVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB306E42B31C13E008ABA51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FB306E52B31C13E008ABA51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +127,7 @@
 		4009D6322B32959F00274DB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F9D343D2B9FEB280044E81E /* HTTP */,
 				6F29CB3D2B7DB1750030C4E6 /* ImageLoader */,
 				6F29CB3C2B7DB1630030C4E6 /* Audio&Video */,
 				6F9A09132B7CE37A00CE906D /* Interview */,
@@ -126,6 +142,19 @@
 				6F0E7A592B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m */,
 			);
 			path = SafeArray;
+			sourceTree = "<group>";
+		};
+		6F176A032BAD39EB0059F2D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F176A042BAD3A030059F2D9 /* InAssociatedModel.h */,
+				6F176A052BAD3A030059F2D9 /* InAssociatedModel.m */,
+				6F176A072BAD3A920059F2D9 /* InAssociatedModel+Test.h */,
+				6F176A082BAD3A920059F2D9 /* InAssociatedModel+Test.m */,
+				6F176A0A2BAD438E0059F2D9 /* WeakObjWrapper.h */,
+				6F176A0B2BAD438E0059F2D9 /* WeakObjWrapper.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6F29CB3C2B7DB1630030C4E6 /* Audio&Video */ = {
@@ -168,6 +197,7 @@
 		6F9A09132B7CE37A00CE906D /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				6F176A032BAD39EB0059F2D9 /* Model */,
 				6FF1A1D12B803FED0084B428 /* BlockMgr */,
 				6F0E7A572B7F8D3A0096B4D2 /* SafeArray */,
 				6F29CB412B7DB2F40030C4E6 /* NSOperation */,
@@ -187,6 +217,8 @@
 				6F0E7A552B7EFB560096B4D2 /* InterviewCOWViewController.m */,
 				6FF1A1CE2B803FD00084B428 /* InterviewBlockMgrViewController.h */,
 				6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */,
+				6F176A002BAD39D50059F2D9 /* InterViewAssociatedViewController.h */,
+				6F176A012BAD39D50059F2D9 /* InterViewAssociatedViewController.m */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -200,6 +232,15 @@
 				6F29CB4E2B7E1A9B0030C4E6 /* DemosHelper.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		6F9D343D2B9FEB280044E81E /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				6F9D343E2B9FEB360044E81E /* HTTPViewController.h */,
+				6F9D343F2B9FEB360044E81E /* HTTPViewController.m */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 		6FB306D82B31C13E008ABA51 = {
@@ -425,9 +466,12 @@
 				6F0E7A532B7EF4360096B4D2 /* InterviewDisplayLinkViewController.m in Sources */,
 				6F29CB4A2B7DC5420030C4E6 /* InterviewRWLockViewController.m in Sources */,
 				6FB306EC2B31C13E008ABA51 /* ViewController.m in Sources */,
+				6F176A022BAD39D50059F2D9 /* InterViewAssociatedViewController.m in Sources */,
 				6F9A09162B7CE63300CE906D /* InterviewSemaphoreViewController.m in Sources */,
 				6F29CB402B7DB2DC0030C4E6 /* InterviewOperationViewController.m in Sources */,
 				6FB306E62B31C13E008ABA51 /* AppDelegate.m in Sources */,
+				6F176A092BAD3A920059F2D9 /* InAssociatedModel+Test.m in Sources */,
+				6F9D34402B9FEB360044E81E /* HTTPViewController.m in Sources */,
 				6F29CB472B7DBF840030C4E6 /* InterviewResidentThreadViewController.m in Sources */,
 				6F0E7A5A2B7F8DB90096B4D2 /* NSMutaleArray+SafeOp.m in Sources */,
 				4009D6352B3295BB00274DB8 /* KFAudioEncoderViewController.m in Sources */,
@@ -442,8 +486,10 @@
 				6FB306F72B31C13F008ABA51 /* main.m in Sources */,
 				6F0E7A562B7EFB560096B4D2 /* InterviewCOWViewController.m in Sources */,
 				4009D6492B34B31B00274DB8 /* KFAudioRenderViewController.m in Sources */,
+				6F176A0C2BAD438E0059F2D9 /* WeakObjWrapper.m in Sources */,
 				6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */,
 				6FF1A1D42B8040360084B428 /* BlockMonitorMgr.m in Sources */,
+				6F176A062BAD3A030059F2D9 /* InAssociatedModel.m in Sources */,
 				6F0008A62B3311EE00DC776A /* KFAudioDemuxerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

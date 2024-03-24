@@ -74,7 +74,17 @@
             "title": "Runloop Block Mgr",
             "target": "InterviewBlockMgrViewController",
             "type" : 2
+        },
+        {
+            "title" : "HTTP MOCK",
+            "target": "HTTPViewController",
+            "type": 3
+        },
+        {
+            "title" : "关联对象",
+            "target": "InterViewAssociatedViewController",
+            "type": 3
         }
     ],
-    "titles" : ["Audio & Video", "ToyImageLoader", "InterView" ]
+    "titles" : ["Audio & Video", "ToyImageLoader", "InterView", "HTTP" ]
 }
