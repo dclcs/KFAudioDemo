@@ -45,10 +45,19 @@ static NSString * const KFMainTableCellIdentifier = @"KFMainTableCellIdentifier"
 #pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"ViewController viewDidLoad");
     self.view.backgroundColor = UIColor.whiteColor;
     [self readDemoJSON];
     [self setupUI];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"ViewController viewWillAppear");
+}
+
+
+
 
 #pragma mark - Setup
 - (void)setupUI {
