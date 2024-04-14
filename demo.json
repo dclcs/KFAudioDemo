@@ -114,6 +114,11 @@
             "type": 2
         },
         {
+            "title" : "UIScrollView AutoLayout",
+            "target": "InterViewScrollViewController",
+            "type": 2
+        },
+        {
             "title" : "HTTP MOCK",
             "target": "HTTPViewController",
             "type": 3

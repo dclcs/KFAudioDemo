@@ -41,11 +41,11 @@
 		6FB307062B31D28D008ABA51 /* KFAudioCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB307052B31D28D008ABA51 /* KFAudioCaptureViewController.m */; };
 		6FF1A1D02B803FD00084B428 /* InterviewBlockMgrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */; };
 		6FF1A1D42B8040360084B428 /* BlockMonitorMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1A1D32B8040360084B428 /* BlockMonitorMgr.m */; };
+		6FF355D22BCBF2DB00E7079A /* InterViewScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF355D12BCBF2DB00E7079A /* InterViewScrollViewController.m */; };
 		6FFF34A12BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A02BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m */; };
 		6FFF34A42BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A32BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m */; };
 		6FFF34A72BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A62BAFDC010012EBDC /* InterViewUIButtonClickMultiViewController.m */; };
 		6FFF34AA2BAFE0B60012EBDC /* InterViewSafeArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34A92BAFE0B60012EBDC /* InterViewSafeArrayViewController.m */; };
-		6FFF34B62BAFE7A10012EBDC /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFF34AF2BAFE65E0012EBDC /* AppsFlyerLib.framework */; };
 		6FFF34BB2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34BA2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m */; };
 		6FFF34BE2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF34BD2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m */; };
 /* End PBXBuildFile section */
@@ -115,6 +115,8 @@
 		6FF1A1CF2B803FD00084B428 /* InterviewBlockMgrViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewBlockMgrViewController.m; sourceTree = "<group>"; };
 		6FF1A1D22B8040360084B428 /* BlockMonitorMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockMonitorMgr.h; sourceTree = "<group>"; };
 		6FF1A1D32B8040360084B428 /* BlockMonitorMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockMonitorMgr.m; sourceTree = "<group>"; };
+		6FF355D02BCBF2DB00E7079A /* InterViewScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewScrollViewController.h; sourceTree = "<group>"; };
+		6FF355D12BCBF2DB00E7079A /* InterViewScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewScrollViewController.m; sourceTree = "<group>"; };
 		6FFF349F2BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewOffScreenRenderViewController.h; sourceTree = "<group>"; };
 		6FFF34A02BAFAAE20012EBDC /* InterViewOffScreenRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewOffScreenRenderViewController.m; sourceTree = "<group>"; };
 		6FFF34A22BAFCE170012EBDC /* InterViewNSProxyWeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewNSProxyWeakViewController.h; sourceTree = "<group>"; };
@@ -139,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF13E92503DE85EF953E5DC /* Pods_AVDemo.framework in Frameworks */,
-				6FFF34B62BAFE7A10012EBDC /* AppsFlyerLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +254,8 @@
 				6FFF34BA2BAFE8DC0012EBDC /* InterViewScrollRunloopViewController.m */,
 				6FFF34BC2BAFED9E0012EBDC /* InterViewActiveThreadViewController.h */,
 				6FFF34BD2BAFED9E0012EBDC /* InterViewActiveThreadViewController.m */,
+				6FF355D02BCBF2DB00E7079A /* InterViewScrollViewController.h */,
+				6FF355D12BCBF2DB00E7079A /* InterViewScrollViewController.m */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				6F9A091C2B7D00F900CE906D /* DemosModel.m in Sources */,
 				6F00089B2B32B0CD00DC776A /* KFAudioMuxerViewController.m in Sources */,
 				6FF1A1D02B803FD00084B428 /* InterviewBlockMgrViewController.m in Sources */,
+				6FF355D22BCBF2DB00E7079A /* InterViewScrollViewController.m in Sources */,
 				6FFF34A42BAFCE170012EBDC /* InterViewNSProxyWeakViewController.m in Sources */,
 				6FFF34AA2BAFE0B60012EBDC /* InterViewSafeArrayViewController.m in Sources */,
 				6F29CB442B7DB3150030C4E6 /* InterOperation.m in Sources */,

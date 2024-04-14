@@ -1,4 +1,5 @@
 PODS:
+  - DCSegementView (0.1.0)
   - Debugo (0.4.0):
     - Debugo/Core (= 0.4.0)
   - Debugo/Core (0.4.0):
@@ -12,14 +13,17 @@ PODS:
   - FMDB/standard (2.7.5)
   - JXSegmentedView (1.3.0)
   - KFAVKit (0.1.0)
+  - Masonry (1.2.1)
   - SnapKit (5.0.1)
   - ToyImageLoader (0.0.3)
   - Yaml (3.4.4)
 
 DEPENDENCIES:
+  - DCSegementView (from `./developing_pods/DCSegementView`)
   - Debugo
   - DebugTool (from `./developing_pods/DebugTool`)
   - KFAVKit (from `https://github.com/dclcs/KFAVKit.git`, tag `0.0.1_beta`)
+  - Masonry (from `https://github.com/cntrump/Masonry.git`, branch `pr_layoutguide_support`)
   - ToyImageLoader (from `https://github.com/dclcs/ToyImageLoader.git`, tag `0.0.3_beta`)
 
 SPEC REPOS:
@@ -31,11 +35,16 @@ SPEC REPOS:
     - Yaml
 
 EXTERNAL SOURCES:
+  DCSegementView:
+    :path: "./developing_pods/DCSegementView"
   DebugTool:
     :path: "./developing_pods/DebugTool"
   KFAVKit:
     :git: https://github.com/dclcs/KFAVKit.git
     :tag: 0.0.1_beta
+  Masonry:
+    :branch: pr_layoutguide_support
+    :git: https://github.com/cntrump/Masonry.git
   ToyImageLoader:
     :git: https://github.com/dclcs/ToyImageLoader.git
     :tag: 0.0.3_beta
@@ -44,20 +53,25 @@ CHECKOUT OPTIONS:
   KFAVKit:
     :git: https://github.com/dclcs/KFAVKit.git
     :tag: 0.0.1_beta
+  Masonry:
+    :commit: 79bb3dc6fadccf8e4355d7e7b3126d02dd1ddc65
+    :git: https://github.com/cntrump/Masonry.git
   ToyImageLoader:
     :git: https://github.com/dclcs/ToyImageLoader.git
     :tag: 0.0.3_beta
 
 SPEC CHECKSUMS:
+  DCSegementView: d8677cb1e64a25260e99ff4a777df44cf7001fe8
   Debugo: 7ea74eca356172e17622b6de46a8f2f9e97724ae
   DebugTool: d56c42be8ef64601fce57fda8f087f2e1a35b087
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
   KFAVKit: f6c89eeef8354ab0d136a116c5468afdb0434556
+  Masonry: 8f05e7eb5506a53015cc9ca82e2a1087204a5b61
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   ToyImageLoader: 178c4d8636fd0cd67c3e6b2b0e5a5337a627d15e
   Yaml: 52831fc1d9ac2db4ddf6d7562993457127256ca6
 
-PODFILE CHECKSUM: 9b9222a6c72bc60b7e4eb679ec029e02f6e55caf
+PODFILE CHECKSUM: 620d86cb670918dfe077a81b969aaa8605c59a45
 
 COCOAPODS: 1.11.3

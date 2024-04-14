@@ -6,3 +6,7 @@
 	path = developing_pods/DebugTool
 	url = https://github.com/dclcs/DebugTool.git
 	branch = main
+[submodule "developing_pods/DCSegementView"]
+	path = developing_pods/DCSegementView
+	url = https://github.com/dclcs/DCSegementView.git
+	branch = master
